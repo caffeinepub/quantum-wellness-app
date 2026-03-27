@@ -39,7 +39,7 @@ type TabId =
   | "gdvScanning";
 
 const ALL_TABS: { id: TabId; label: string; color: string }[] = [
-  { id: "pulse", label: "Pulse Dx", color: "#FF6B6B" },
+  { id: "pulse", label: "Pulse Dx", color: "#FF1493" },
   { id: "fiveElements", label: "5 Elements", color: "#FF9F43" },
   { id: "trigrams", label: "Trigrams", color: "#F7CA18" },
   { id: "iching", label: "I Ching", color: "#A8E063" },
@@ -276,6 +276,10 @@ function WristColumn({
 }
 
 const SCANNING_PARAMS_COLS = [
+  "Organ",
+  "Emotion",
+  "Season",
+  "Time",
   "Touch",
   "Tongue",
   "Cardinal Pts",
@@ -310,8 +314,12 @@ const SCANNING_PARAMS_ROWS: {
 }[] = [
   {
     element: "Fire Minister",
-    color: "#FF6B6B",
+    color: "#FF1493",
     data: [
+      "P/TW",
+      "Emotional Up/Down",
+      "Summer",
+      "19h-21",
       "Slap",
       "Speech",
       "Zenith",
@@ -343,6 +351,10 @@ const SCANNING_PARAMS_ROWS: {
     element: "Water",
     color: "#3b82f6",
     data: [
+      "Kidney/BL",
+      "Fear",
+      "Winter",
+      "15–19h",
       "Wave",
       "Root",
       "North",
@@ -374,6 +386,10 @@ const SCANNING_PARAMS_ROWS: {
     element: "Metal",
     color: "#d1d5db",
     data: [
+      "Lung/LI",
+      "Grief",
+      "Autumn",
+      "03–07h",
       "Stroke",
       "Tip",
       "West",
@@ -403,8 +419,12 @@ const SCANNING_PARAMS_ROWS: {
   },
   {
     element: "Soil",
-    color: "#f97316",
+    color: "#FFD700",
     data: [
+      "Spleen/ST",
+      "Worry",
+      "Late Summer",
+      "07–11h",
       "Malaxing",
       "Centre",
       "Centre",
@@ -434,8 +454,12 @@ const SCANNING_PARAMS_ROWS: {
   },
   {
     element: "Fire",
-    color: "#ef4444",
+    color: "#FF0000",
     data: [
+      "Heart/SI",
+      "Joy",
+      "Summer",
+      "11–15h",
       "Massage",
       "Whole",
       "South",
@@ -467,6 +491,10 @@ const SCANNING_PARAMS_ROWS: {
     element: "Tree",
     color: "#22c55e",
     data: [
+      "Liver/GB",
+      "Anger",
+      "Spring",
+      "23–03h",
       "Pressure",
       "Sides",
       "East",
@@ -508,7 +536,7 @@ function FiveElements() {
     },
     {
       name: "Fire",
-      color: "#ef4444",
+      color: "#FF0000",
       organ: "Heart/SI",
       emotion: "Joy",
       season: "Summer",
@@ -516,7 +544,7 @@ function FiveElements() {
     },
     {
       name: "Earth",
-      color: "#f97316",
+      color: "#FFD700",
       organ: "Spleen/ST",
       emotion: "Worry",
       season: "Late Summer",
@@ -537,6 +565,14 @@ function FiveElements() {
       emotion: "Fear",
       season: "Winter",
       time: "15–19h",
+    },
+    {
+      name: "Fire Minister",
+      color: "#FF1493",
+      organ: "P/TW",
+      emotion: "Emotional Up/Down",
+      season: "Summer",
+      time: "19h-21",
     },
   ];
   const rows: { label: string; key: keyof (typeof columns)[0] }[] = [
@@ -597,7 +633,7 @@ function FiveElements() {
         <div className="overflow-x-auto">
           <table
             className="text-xs border-collapse"
-            style={{ minWidth: "1400px" }}
+            style={{ minWidth: "1800px" }}
           >
             <thead>
               <tr style={{ backgroundColor: "#111" }}>
@@ -645,7 +681,8 @@ function FiveElements() {
                     return (
                       <td
                         key={colName}
-                        className="py-2 px-3 text-center border border-gray-700 text-gray-300 whitespace-nowrap"
+                        className="py-2 px-3 text-center border border-gray-700 whitespace-nowrap"
+                        style={{ color: row.color }}
                       >
                         {cell}
                       </td>
