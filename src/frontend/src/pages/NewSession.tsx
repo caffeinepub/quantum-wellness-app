@@ -15,6 +15,7 @@ import type { Patient } from "../backend.d";
 import { useActor } from "../hooks/useActor";
 
 const MODALITY_OPTIONS = [
+  "Bio-Photonic, Bio-Reasonanz Russian PMA Scanner",
   "PMA Scan",
   "Bio-Reasonanz Laser",
   "Thermal IR Scan",
@@ -302,15 +303,25 @@ export default function NewSession({
         </div>
       </div>
 
-      <Button
-        onClick={handleSubmit}
-        disabled={saving}
-        data-ocid="session.save.submit_button"
-        className="w-full sm:w-auto hover:opacity-90"
-        style={{ backgroundColor: "#C8862A", color: "#fff" }}
-      >
-        {saving ? "Saving…" : "Save Session"}
-      </Button>
+      <div className="flex flex-wrap gap-3">
+        <Button
+          onClick={handleSubmit}
+          disabled={saving}
+          data-ocid="session.save.submit_button"
+          className="hover:opacity-90"
+          style={{ backgroundColor: "#C8862A", color: "#fff" }}
+        >
+          {saving ? "Saving…" : "Save Session"}
+        </Button>
+        <Button
+          onClick={() => toast.info("Diagnosis feature coming soon")}
+          data-ocid="session.diagnosis.button"
+          className="hover:opacity-90"
+          style={{ backgroundColor: "#2E86DE", color: "#fff" }}
+        >
+          Diagnosis
+        </Button>
+      </div>
     </div>
   );
 }

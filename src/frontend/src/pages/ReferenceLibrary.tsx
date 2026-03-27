@@ -1,23 +1,138 @@
 import { useState } from "react";
 
-type MainTab = "pulse" | "fiveElements" | "trigrams" | "iching";
-type SubTab = "acupuncture" | "pmaGuide";
+type TabId =
+  | "pulse"
+  | "fiveElements"
+  | "trigrams"
+  | "iching"
+  | "acupuncture"
+  | "pmaGuide"
+  | "triorigin"
+  | "extVessels"
+  | "hexMatrix"
+  | "drTung"
+  | "hitTheory"
+  | "astroVastu"
+  | "drVoll"
+  | "drYamamoto"
+  | "drManaka"
+  | "drNogier"
+  | "drSam"
+  | "drElias"
+  | "drReinangar"
+  | "microNano"
+  | "skulAcu"
+  | "koreanHand"
+  | "headZones"
+  | "organZones"
+  | "triggerZones"
+  | "quantumNpso"
+  | "russianTriorigin"
+  | "quantumBodies"
+  | "quantumMuscular"
+  | "drBahr"
+  | "chakraFreq"
+  | "meridianFreq"
+  | "allMeridians"
+  | "listDiseases"
+  | "voiceSpectrum"
+  | "gdvScanning";
+
+const ALL_TABS: { id: TabId; label: string; color: string }[] = [
+  { id: "pulse", label: "Pulse Dx", color: "#FF6B6B" },
+  { id: "fiveElements", label: "5 Elements", color: "#FF9F43" },
+  { id: "trigrams", label: "Trigrams", color: "#F7CA18" },
+  { id: "iching", label: "I Ching", color: "#A8E063" },
+  { id: "acupuncture", label: "Acupuncture", color: "#26de81" },
+  { id: "pmaGuide", label: "PMA Guide", color: "#2BCBBA" },
+  { id: "triorigin", label: "Triorigin", color: "#45AAF2" },
+  { id: "extVessels", label: "Ext. Vessels", color: "#4B7BEC" },
+  { id: "hexMatrix", label: "Hex Matrix", color: "#A55EEA" },
+  { id: "drTung", label: "Dr. Tung", color: "#FC5C65" },
+  { id: "hitTheory", label: "Hit Theory", color: "#FD9644" },
+  { id: "astroVastu", label: "Astro Vastu", color: "#FECA57" },
+  {
+    id: "drVoll",
+    label: "Dr Voll's EAV Bio-Photonic, Bio-Reasonanz",
+    color: "#C8E6C9",
+  },
+  { id: "drYamamoto", label: "Dr Yamamoto", color: "#80CBC4" },
+  { id: "drManaka", label: "Dr Manaka", color: "#81D4FA" },
+  {
+    id: "drNogier",
+    label: "Dr Nogier RAC VAS Bio-Photonic, Bio-Reasonanz Pulse",
+    color: "#CE93D8",
+  },
+  { id: "drSam", label: "Dr SAM", color: "#F48FB1" },
+  { id: "drElias", label: "Dr Elias", color: "#FFCC80" },
+  { id: "drReinangar", label: "Dr Reinangar", color: "#E6EE9C" },
+  {
+    id: "microNano",
+    label: "Micro/ Neno/ Femto Bio-Photonic Acupuncture",
+    color: "#80DEEA",
+  },
+  { id: "skulAcu", label: "Skul Acupuncture", color: "#EF9A9A" },
+  { id: "koreanHand", label: "Korean Hand Acupuncture", color: "#FFAB40" },
+  { id: "headZones", label: "Head Zones", color: "#69F0AE" },
+  { id: "organZones", label: "Örgän's Zones", color: "#40C4FF" },
+  { id: "triggerZones", label: "Triggers Zones", color: "#EA80FC" },
+  { id: "quantumNpso", label: "Quantum NPSO Zones", color: "#FF6E40" },
+  {
+    id: "russianTriorigin",
+    label: "Russian Quantum Triorigin",
+    color: "#B9F6CA",
+  },
+  {
+    id: "quantumBodies",
+    label: "Quantum Bodies Oscillation Frequency",
+    color: "#FFD740",
+  },
+  {
+    id: "quantumMuscular",
+    label: "Quantum Muscular Micro Photonic Waves 🌊",
+    color: "#64FFDA",
+  },
+  {
+    id: "drBahr",
+    label: "Dr Bahr Bio-Photonic, Bio-Reasonanz Pulse",
+    color: "#FF80AB",
+  },
+  {
+    id: "chakraFreq",
+    label: "Bio-Photonic, Bio-Reasonanz Chakras Frequencies",
+    color: "#CF6679",
+  },
+  {
+    id: "meridianFreq",
+    label: "Bio-Photonic, Bio-Reasonanz Meridians Frequencies",
+    color: "#82B1FF",
+  },
+  {
+    id: "allMeridians",
+    label:
+      "All Meridians Images & Live Bio-Photonic Cosmo Energetic oscillator Flows",
+    color: "#CCFF90",
+  },
+  { id: "listDiseases", label: "List Diseases", color: "#FF4757" },
+  {
+    id: "voiceSpectrum",
+    label: "Bio-Photonic, Bio-Reasonanz Voice Spectrum Scanning",
+    color: "#7BED9F",
+  },
+  { id: "gdvScanning", label: "GDV Scanning", color: "#70A1FF" },
+];
+
+const EXISTING_IDS = new Set([
+  "pulse",
+  "fiveElements",
+  "trigrams",
+  "iching",
+  "acupuncture",
+  "pmaGuide",
+]);
 
 export default function ReferenceLibrary() {
-  const [mainTab, setMainTab] = useState<MainTab>("pulse");
-  const [subTab, setSubTab] = useState<SubTab>("acupuncture");
-
-  const mainTabs: { id: MainTab; label: string }[] = [
-    { id: "pulse", label: "Pulse Diagnosis" },
-    { id: "fiveElements", label: "Five Elements" },
-    { id: "trigrams", label: "Eight Trigrams" },
-    { id: "iching", label: "I Ching" },
-  ];
-
-  const subTabs: { id: SubTab; label: string }[] = [
-    { id: "acupuncture", label: "Acupuncture" },
-    { id: "pmaGuide", label: "PMA Guide" },
-  ];
+  const [activeTab, setActiveTab] = useState<TabId>("pulse");
 
   return (
     <div className="space-y-6">
@@ -29,22 +144,27 @@ export default function ReferenceLibrary() {
         </p>
       </div>
 
-      {/* Main tabs */}
-      <div className="flex flex-wrap gap-2" data-ocid="library.main.tab">
-        {mainTabs.map((t) => (
+      {/* Tab buttons — scrollable grid */}
+      <div className="flex flex-wrap gap-2">
+        {ALL_TABS.map((t) => (
           <button
             type="button"
             key={t.id}
-            onClick={() => setMainTab(t.id)}
-            data-ocid={`library.${t.id}.tab`}
-            className="px-4 py-2 rounded-lg text-sm font-medium transition-all"
+            onClick={() => setActiveTab(t.id)}
+            className="px-3 py-1.5 rounded-lg text-xs font-medium transition-all"
             style={
-              mainTab === t.id
-                ? { backgroundColor: "#2A1A00", color: "#C8862A" }
-                : {
+              activeTab === t.id
+                ? {
                     backgroundColor: "#1A1A1A",
-                    color: "#9CA3AF",
-                    border: "1px solid #2A2A2A",
+                    color: t.color,
+                    border: `1px solid ${t.color}`,
+                    boxShadow: `0 0 6px ${t.color}55`,
+                  }
+                : {
+                    backgroundColor: "#111111",
+                    color: t.color,
+                    border: `1px solid ${t.color}55`,
+                    opacity: 0.85,
                   }
             }
           >
@@ -53,39 +173,22 @@ export default function ReferenceLibrary() {
         ))}
       </div>
 
-      {/* Sub tabs */}
-      <div className="flex flex-wrap gap-2" data-ocid="library.sub.tab">
-        {subTabs.map((t) => (
-          <button
-            type="button"
-            key={t.id}
-            onClick={() => setSubTab(t.id)}
-            data-ocid={`library.${t.id}.tab`}
-            className="px-4 py-2 rounded-lg text-sm font-medium transition-all"
-            style={
-              subTab === t.id
-                ? { backgroundColor: "#2A1A00", color: "#C8862A" }
-                : {
-                    backgroundColor: "#1A1A1A",
-                    color: "#9CA3AF",
-                    border: "1px solid #2A2A2A",
-                  }
-            }
-          >
-            {t.label}
-          </button>
-        ))}
-      </div>
-
-      {/* Content */}
+      {/* Content panel */}
       <div
         className="rounded-xl border border-border p-5 space-y-5"
         style={{ backgroundColor: "#1A1A1A" }}
       >
-        {mainTab === "pulse" && <PulseDiagnosis />}
-        {mainTab === "fiveElements" && <FiveElements />}
-        {mainTab === "trigrams" && <EightTrigrams />}
-        {mainTab === "iching" && <IChing />}
+        {activeTab === "pulse" && <PulseDiagnosis />}
+        {activeTab === "fiveElements" && <FiveElements />}
+        {activeTab === "trigrams" && <EightTrigrams />}
+        {activeTab === "iching" && <IChing />}
+        {activeTab === "acupuncture" && <Acupuncture />}
+        {activeTab === "pmaGuide" && <PmaGuide />}
+        {!EXISTING_IDS.has(activeTab) && (
+          <ComingSoon
+            label={ALL_TABS.find((t) => t.id === activeTab)?.label ?? ""}
+          />
+        )}
       </div>
     </div>
   );
@@ -96,6 +199,22 @@ function GoldTitle({ children }: { children: React.ReactNode }) {
     <h2 className="text-lg font-bold mb-3" style={{ color: "#C8862A" }}>
       {children}
     </h2>
+  );
+}
+
+function ComingSoon({ label }: { label: string }) {
+  return (
+    <div className="text-center py-12">
+      <div className="text-4xl mb-4">📖</div>
+      <h2 className="text-lg font-bold mb-2" style={{ color: "#C8862A" }}>
+        {label}
+      </h2>
+      <p className="text-gray-400 text-sm">
+        Content will be added shortly.
+        <br />
+        Please provide the data and it will be updated here.
+      </p>
+    </div>
   );
 }
 
@@ -156,6 +275,227 @@ function WristColumn({
   );
 }
 
+const SCANNING_PARAMS_COLS = [
+  "Touch",
+  "Tongue",
+  "Cardinal Pts",
+  "Taste",
+  "Sounds",
+  "Smells of Body",
+  "Senses",
+  "Personality",
+  "Sense Organs",
+  "Musical",
+  "Motions",
+  "Meat",
+  "Fluids",
+  "Face",
+  "Emotions",
+  "Colours",
+  "Climate",
+  "Characteristics",
+  "Characters",
+  "Cereals",
+  "Body Structure",
+  "Aroma",
+  "Animals",
+  "Actions",
+  "6 Syndromes",
+];
+
+const SCANNING_PARAMS_ROWS: {
+  element: string;
+  color: string;
+  data: string[];
+}[] = [
+  {
+    element: "Fire Minister",
+    color: "#FF6B6B",
+    data: [
+      "Slap",
+      "Speech",
+      "Zenith",
+      "Burning",
+      "Speech",
+      "Fresh",
+      "Thought",
+      "Consciousness",
+      "Brain",
+      "Singing",
+      "Jump",
+      "Life",
+      "Semen",
+      "Look",
+      "Thought",
+      "Purple",
+      "Lightning",
+      "Void",
+      "Spirituality",
+      "Information",
+      "Nerves",
+      "Ozone",
+      "Human",
+      "Control",
+      "Dryness",
+    ],
+  },
+  {
+    element: "Water",
+    color: "#3b82f6",
+    data: [
+      "Wave",
+      "Root",
+      "North",
+      "Salty",
+      "Groan",
+      "Written",
+      "Hearing",
+      "Will",
+      "Ear",
+      "Crystal",
+      "Down",
+      "Pork",
+      "Urine",
+      "Chin",
+      "Fear",
+      "Black",
+      "Cold",
+      "Flexibility",
+      "Softness",
+      "Legumes/Beans",
+      "Bone",
+      "Ammonia",
+      "Snake",
+      "Sleep",
+      "Heat",
+    ],
+  },
+  {
+    element: "Metal",
+    color: "#d1d5db",
+    data: [
+      "Stroke",
+      "Tip",
+      "West",
+      "Bitter",
+      "Cry",
+      "Carnel",
+      "Smell",
+      "Thought",
+      "Nose",
+      "Bell",
+      "Inside",
+      "Horse Flesh",
+      "Slime",
+      "Left/Right Cheek",
+      "Excitement",
+      "White",
+      "Dryness",
+      "Dexterity",
+      "Tenderness",
+      "Rice",
+      "Skin",
+      "Coniferous",
+      "Leopard",
+      "Barefoot",
+      "Wind",
+    ],
+  },
+  {
+    element: "Soil",
+    color: "#f97316",
+    data: [
+      "Malaxing",
+      "Centre",
+      "Centre",
+      "Sweet",
+      "Singing",
+      "Aromatic",
+      "Touch",
+      "Intelligence",
+      "Mouth",
+      "Percussive",
+      "Outside",
+      "Beef",
+      "Slobber",
+      "Nose",
+      "Meditation",
+      "Yellow",
+      "Moisture",
+      "Universality",
+      "Firmness",
+      "Rye",
+      "Muscle",
+      "Rose",
+      "Dragon",
+      "Maturing",
+      "Cold",
+    ],
+  },
+  {
+    element: "Fire",
+    color: "#ef4444",
+    data: [
+      "Massage",
+      "Whole",
+      "South",
+      "Hot",
+      "Laugh",
+      "Salty",
+      "Taste",
+      "Tenderness",
+      "Tongue",
+      "Stringed/Guitar",
+      "Up",
+      "Lamb",
+      "Sweat",
+      "Forehead",
+      "Laugh",
+      "Red",
+      "Heat",
+      "Strength",
+      "Courageous",
+      "Millet",
+      "Vessels",
+      "Ginger",
+      "Tiger",
+      "Blossom",
+      "Dampness",
+    ],
+  },
+  {
+    element: "Tree",
+    color: "#22c55e",
+    data: [
+      "Pressure",
+      "Sides",
+      "East",
+      "Sour",
+      "Scream",
+      "Bitter",
+      "Sight",
+      "Resoluteness",
+      "Eyes",
+      "Flute",
+      "Straight",
+      "Bird",
+      "Tears",
+      "Left/Right Cheek",
+      "Anger",
+      "Green",
+      "Wind",
+      "Lightness",
+      "Combinatorics",
+      "Wheat",
+      "Sinew",
+      "Musk",
+      "Crane",
+      "Growth",
+      "Fire",
+    ],
+  },
+];
+
 function FiveElements() {
   const columns = [
     {
@@ -206,45 +546,116 @@ function FiveElements() {
     { label: "Time", key: "time" },
   ];
   return (
-    <div>
-      <GoldTitle>Five Elements — Wu Xing & Diurnal Cycle</GoldTitle>
-      <div className="overflow-x-auto">
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="border-b border-border">
-              <th className="text-left py-2 pr-3 text-gray-400 font-medium w-24" />
-              {columns.map((c) => (
-                <th
-                  key={c.name}
-                  className="py-2 px-3 text-center font-bold"
-                  style={{ color: c.color }}
-                >
-                  {c.name}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((row) => (
-              <tr
-                key={row.label}
-                className="border-b border-border last:border-0"
-              >
-                <td className="py-2 pr-3 text-gray-400 font-medium">
-                  {row.label}
-                </td>
+    <div className="space-y-8">
+      <div>
+        <GoldTitle>Five Elements — Wu Xing & Diurnal Cycle</GoldTitle>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-border">
+                <th className="text-left py-2 pr-3 text-gray-400 font-medium w-24" />
                 {columns.map((c) => (
-                  <td
+                  <th
                     key={c.name}
-                    className="py-2 px-3 text-center text-gray-300"
+                    className="py-2 px-3 text-center font-bold"
+                    style={{ color: c.color }}
                   >
-                    {c[row.key] as string}
-                  </td>
+                    {c.name}
+                  </th>
                 ))}
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {rows.map((row) => (
+                <tr
+                  key={row.label}
+                  className="border-b border-border last:border-0"
+                >
+                  <td className="py-2 pr-3 text-gray-400 font-medium">
+                    {row.label}
+                  </td>
+                  {columns.map((c) => (
+                    <td
+                      key={c.name}
+                      className="py-2 px-3 text-center text-gray-300"
+                    >
+                      {c[row.key] as string}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Scanning Parameters Table */}
+      <div>
+        <h3 className="text-base font-bold mb-3" style={{ color: "#C8862A" }}>
+          Scanning Parameters
+        </h3>
+        <div className="overflow-x-auto">
+          <table
+            className="text-xs border-collapse"
+            style={{ minWidth: "1400px" }}
+          >
+            <thead>
+              <tr style={{ backgroundColor: "#111" }}>
+                <th
+                  className="py-2 px-3 text-left font-bold border border-gray-700 sticky left-0 z-10"
+                  style={{
+                    backgroundColor: "#111",
+                    color: "#C8862A",
+                    minWidth: "100px",
+                  }}
+                >
+                  Element
+                </th>
+                {SCANNING_PARAMS_COLS.map((col) => (
+                  <th
+                    key={col}
+                    className="py-2 px-3 text-center font-semibold border border-gray-700 whitespace-nowrap"
+                    style={{ color: "#C8862A", backgroundColor: "#111" }}
+                  >
+                    {col}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {SCANNING_PARAMS_ROWS.map((row, ri) => (
+                <tr
+                  key={row.element}
+                  style={{
+                    backgroundColor: ri % 2 === 0 ? "#0D0D0D" : "#141414",
+                  }}
+                >
+                  <td
+                    className="py-2 px-3 font-bold border border-gray-700 sticky left-0 z-10"
+                    style={{
+                      color: row.color,
+                      backgroundColor: ri % 2 === 0 ? "#0D0D0D" : "#141414",
+                      minWidth: "100px",
+                    }}
+                  >
+                    {row.element}
+                  </td>
+                  {row.data.map((cell, ci) => {
+                    const colName = SCANNING_PARAMS_COLS[ci];
+                    return (
+                      <td
+                        key={colName}
+                        className="py-2 px-3 text-center border border-gray-700 text-gray-300 whitespace-nowrap"
+                      >
+                        {cell}
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
@@ -274,10 +685,9 @@ function EightTrigrams() {
     <div>
       <GoldTitle>Eight Trigrams (Ba Gua) — Vedic Integration</GoldTitle>
       <p className="text-sm text-gray-400 leading-relaxed mb-5">
-        The Ba Gua (Eight Trigrams) of the I Ching correspond to the eight
-        directional energies and body zones. In the Vedic integration system,
-        these map to the Navagraha (nine planets) and Chakra system, creating a
-        unified bio-energetic diagnostic framework.
+        The Ba Gua correspond to eight directional energies and body zones. In
+        the Vedic integration system, these map to the Navagraha and Chakra
+        system, creating a unified bio-energetic diagnostic framework.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
@@ -335,6 +745,30 @@ function IChing() {
         The 64 hexagrams encode all possible states of yin-yang transformation
         across six levels. In bio-photonic diagnosis, hexagram patterns
         correlate with cellular coherence states.
+      </p>
+    </div>
+  );
+}
+
+function Acupuncture() {
+  return (
+    <div>
+      <GoldTitle>Acupuncture</GoldTitle>
+      <p className="text-sm text-gray-400 leading-relaxed">
+        Classical acupuncture reference — meridian pathways, point locations,
+        and bio-photonic activation protocols.
+      </p>
+    </div>
+  );
+}
+
+function PmaGuide() {
+  return (
+    <div>
+      <GoldTitle>PMA Guide</GoldTitle>
+      <p className="text-sm text-gray-400 leading-relaxed">
+        Photonic Meridian Activation (PMA) guide — treatment protocols and
+        clinical application guidelines.
       </p>
     </div>
   );
