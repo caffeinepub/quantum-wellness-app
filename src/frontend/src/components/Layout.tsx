@@ -174,6 +174,22 @@ function SidebarContent({
         })}
       </nav>
 
+      {/* Logos below Profile nav item */}
+      <div className="flex mx-3 mb-3" style={{ gap: 0 }}>
+        <img
+          src="/assets/uploads/screenshot_20260327_104232-019d2efb-db1f-72a1-bf3d-17fb01c9a149-1.jpg"
+          alt="Omkareshwar Logo"
+          className="w-1/2 object-contain"
+          style={{ margin: 0, padding: 0, display: "block" }}
+        />
+        <img
+          src="/assets/uploads/screenshot_20260327_022632-019d3141-8529-73d8-adf6-45a44ac0be10-1.jpg"
+          alt="Hidén Ärdhnärishwär Logo"
+          className="w-1/2 object-contain"
+          style={{ margin: 0, padding: 0, display: "block" }}
+        />
+      </div>
+
       {/* Active Modalities card */}
       <div
         className="mx-3 mb-4 p-4 rounded-lg border border-border"
