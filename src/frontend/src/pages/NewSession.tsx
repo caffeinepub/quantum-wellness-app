@@ -27,18 +27,18 @@ const MODALITY_OPTIONS = [
 ];
 
 const MERIDIAN_ROWS = [
-  { code: "GB", name: "Gallbladder" },
-  { code: "LR", name: "Liver" },
-  { code: "ST", name: "Stomach" },
-  { code: "SP", name: "Spleen" },
-  { code: "BL", name: "Bladder" },
-  { code: "KI", name: "Kidney" },
-  { code: "SI", name: "Small Intestine" },
-  { code: "HT", name: "Heart" },
-  { code: "LI", name: "Large Intestine" },
-  { code: "LU", name: "Lung" },
-  { code: "TE", name: "Triple Energizer" },
-  { code: "PC", name: "Pericardium" },
+  { code: "GB", name: "Gallbladder", elementColor: "#22c55e" },
+  { code: "LR", name: "Liver", elementColor: "#22c55e" },
+  { code: "ST", name: "Stomach", elementColor: "#FFD700" },
+  { code: "SP", name: "Spleen", elementColor: "#FFD700" },
+  { code: "BL", name: "Bladder", elementColor: "#3b82f6" },
+  { code: "KI", name: "Kidney", elementColor: "#3b82f6" },
+  { code: "SI", name: "Small Intestine", elementColor: "#FF0000" },
+  { code: "HT", name: "Heart", elementColor: "#FF0000" },
+  { code: "LI", name: "Large Intestine", elementColor: "#d1d5db" },
+  { code: "LU", name: "Lung", elementColor: "#d1d5db" },
+  { code: "TE", name: "Triple Energizer", elementColor: "#FF1493" },
+  { code: "PC", name: "Pericardium", elementColor: "#FF1493" },
 ];
 
 type ReadingRow = {
@@ -273,14 +273,14 @@ export default function NewSession({
                     className="border-b border-border last:border-0"
                     data-ocid={`session.readings.row.${i + 1}`}
                   >
-                    <td className="py-2 pr-3 text-gray-300 whitespace-nowrap">
+                    <td className="py-2 pr-3 whitespace-nowrap">
                       <span
-                        className="font-mono text-xs mr-1"
-                        style={{ color: "#C8862A" }}
+                        className="font-mono text-xs mr-1 font-bold"
+                        style={{ color: m.elementColor }}
                       >
                         {m.code}
                       </span>
-                      <span className="text-gray-400">{m.name}</span>
+                      <span style={{ color: m.elementColor }}>{m.name}</span>
                     </td>
                     {READING_FIELDS.map(({ field, color }) => (
                       <td key={field} className="py-1.5 px-2">
