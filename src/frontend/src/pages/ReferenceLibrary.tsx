@@ -1073,11 +1073,14 @@ function EightTrigrams() {
                 >
                   <td
                     className="border border-gray-700 px-3 py-1 text-xl text-center"
-                    style={{ color: "#C8862A" }}
+                    style={{ color: "#FFD700" }}
                   >
                     {row.sym}
                   </td>
-                  <td className="border border-gray-700 px-3 py-1 text-gray-200">
+                  <td
+                    className="border border-gray-700 px-3 py-1"
+                    style={{ color: "#FFD700" }}
+                  >
                     {row.name}
                   </td>
                   <td className="border border-gray-700 px-3 py-1 text-lg text-center">
