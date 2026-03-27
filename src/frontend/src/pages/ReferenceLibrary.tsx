@@ -613,7 +613,8 @@ function FiveElements() {
                   {columns.map((c) => (
                     <td
                       key={c.name}
-                      className="py-2 px-3 text-center text-gray-300"
+                      className="py-2 px-3 text-center"
+                      style={{ color: c.color, fontWeight: 600 }}
                     >
                       {c[row.key] as string}
                     </td>
