@@ -256,8 +256,13 @@ export default function NewSession({
                 {READING_FIELDS.map((f) => (
                   <th
                     key={f.field}
-                    className="py-2 px-2 text-center font-semibold"
-                    style={{ color: f.color }}
+                    className="py-2 px-2 text-center"
+                    style={{
+                      color: f.color,
+                      fontWeight: "bold",
+                      fontSize: "0.9rem",
+                      textShadow: `0 0 8px ${f.color}88`,
+                    }}
                   >
                     {f.label}
                   </th>
@@ -283,15 +288,19 @@ export default function NewSession({
                       <span style={{ color: m.elementColor }}>{m.name}</span>
                     </td>
                     {READING_FIELDS.map(({ field, color }) => (
-                      <td key={field} className="py-1.5 px-2">
+                      <td
+                        key={field}
+                        className="py-1.5 px-2"
+                        style={{ backgroundColor: `${color}14` }}
+                      >
                         <input
                           type="number"
                           value={r[field]}
                           onChange={(e) =>
                             updateReading(m.code, field, e.target.value)
                           }
-                          className="w-16 rounded border border-border bg-input px-2 py-1 text-center text-sm"
-                          style={{ color }}
+                          className="w-16 rounded border bg-input px-2 py-1 text-center text-sm font-semibold"
+                          style={{ color, borderColor: color }}
                         />
                       </td>
                     ))}
