@@ -923,6 +923,239 @@ function EightTrigrams() {
           </div>
         </div>
       </div>
+      {/* Lunar Cycles 64 Hexagrams Equinox Table */}
+      <div className="mt-8">
+        <h3 className="text-base font-bold mb-4" style={{ color: "#C8862A" }}>
+          Lunar Cycles 64 hexagrams/ 64 Yögini&apos;s &amp; 64 Sidhdhä&apos;s
+          Powers Equinox
+        </h3>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr style={{ background: "rgba(200,134,42,0.2)" }}>
+                <th
+                  className="border border-gray-600 px-3 py-2 text-left"
+                  style={{ color: "#C8862A" }}
+                >
+                  Hexagram/ 64 Yögini&apos;s &amp; 64 Sidhdhäs Symbol
+                </th>
+                <th
+                  className="border border-gray-600 px-3 py-2 text-left"
+                  style={{ color: "#C8862A" }}
+                >
+                  Hexagram/ 64 Yögini&apos;s &amp; 64 Sidhdhäs Powers Name
+                </th>
+                <th
+                  className="border border-gray-600 px-3 py-2 text-left"
+                  style={{ color: "#C8862A" }}
+                >
+                  Moon Phase
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { sym: "☰", name: "01 Determination qián", moon: "🌑" },
+                { sym: "☷", name: "02 The Receptive kūn", moon: "🌒" },
+                {
+                  sym: "☳",
+                  name: "03 Difficulty at the Beginning chún",
+                  moon: "🌒",
+                },
+                { sym: "☶", name: "04 Youthful Folly méng", moon: "🌒" },
+                { sym: "☵", name: "05 Waiting xū", moon: "🌓" },
+                { sym: "☲", name: "06 Conflict sòng", moon: "🌓" },
+                { sym: "☴", name: "07 The Army shī", moon: "🌓" },
+                { sym: "☱", name: "08 Holding Together bǐ", moon: "🌔" },
+                {
+                  sym: "☰",
+                  name: "09 The Taming Power of the Small xiǎo chù",
+                  moon: "🌔",
+                },
+                { sym: "☷", name: "10 Treading lǔ", moon: "🌔" },
+                { sym: "☳", name: "11 Peace taì", moon: "🌔" },
+                { sym: "☶", name: "12 Standstill pǐ", moon: "🌔" },
+                {
+                  sym: "☵",
+                  name: "13 Fellowship with Men tóng rén",
+                  moon: "🌔",
+                },
+                {
+                  sym: "☲",
+                  name: "14 Possession in Great Measure dà yǒu",
+                  moon: "🌔",
+                },
+                { sym: "☴", name: "15 Modesty qiān", moon: "🌕" },
+                { sym: "☱", name: "16 Enthusiasm yù", moon: "🌖" },
+                { sym: "☰", name: "17 Following suí", moon: "🌖" },
+                {
+                  sym: "☷",
+                  name: "18 Work on What Has Been Spoiled gǔ",
+                  moon: "🌖",
+                },
+                { sym: "☳", name: "19 Approach lín", moon: "🌖" },
+                { sym: "☶", name: "20 Contemplation guān", moon: "🌖" },
+                { sym: "☵", name: "21 Biting Through shì kè", moon: "🌖" },
+                { sym: "☲", name: "22 Grace bì", moon: "🌖" },
+                { sym: "☴", name: "23 Splitting Apart bō", moon: "🌖" },
+                { sym: "☱", name: "24 Return fù", moon: "🌗" },
+                { sym: "☰", name: "25 Innocence wú wàng", moon: "🌗" },
+                {
+                  sym: "☷",
+                  name: "26 The Taming Power of the Great dà chù",
+                  moon: "🌗",
+                },
+                { sym: "☳", name: "27 Providing Nourishment yí", moon: "🌘" },
+                {
+                  sym: "☶",
+                  name: "28 Preponderance of the Great dà guò",
+                  moon: "🌘",
+                },
+                { sym: "☵", name: "29 The Abysmal kǎn", moon: "🌘" },
+                { sym: "☲", name: "30 The Clinging lí", moon: "🌑" },
+                { sym: "☴", name: "31 Influence xián", moon: "🌑" },
+                { sym: "☱", name: "32 Duration héng", moon: "🌒" },
+                { sym: "☰", name: "33 Retreat dùn", moon: "🌒" },
+                {
+                  sym: "☷",
+                  name: "34 The Power of the Great dà zhuàng",
+                  moon: "🌒",
+                },
+                { sym: "☳", name: "35 Progress jìn", moon: "🌓" },
+                {
+                  sym: "☶",
+                  name: "36 Darkening of the Light míng yí",
+                  moon: "🌓",
+                },
+                { sym: "☵", name: "37 The Clan jiā rén", moon: "🌓" },
+                { sym: "☲", name: "38 Opposition kúi", moon: "🌔" },
+                { sym: "☴", name: "39 Obstruction jiǎn", moon: "🌔" },
+                { sym: "☱", name: "40 Deliverance xìe", moon: "🌔" },
+                { sym: "☰", name: "41 Decrease sǔn", moon: "🌔" },
+                { sym: "☷", name: "42 Increase yì", moon: "🌔" },
+                { sym: "☳", name: "43 Break-Through guài", moon: "🌔" },
+                { sym: "☶", name: "44 Coming to Meet gòu", moon: "🌔" },
+                { sym: "☵", name: "45 Gathering Together cùi", moon: "🌕" },
+                { sym: "☲", name: "46 Pushing Upward shēng", moon: "🌖" },
+                { sym: "☴", name: "47 Oppression kùn", moon: "🌖" },
+                { sym: "☱", name: "48 The Well jǐng", moon: "🌖" },
+                { sym: "☰", name: "49 Revolution gé", moon: "🌖" },
+                { sym: "☷", name: "50 The Caldron dǐng", moon: "🌖" },
+                { sym: "☳", name: "51 Arousing zhèn", moon: "🌖" },
+                { sym: "☶", name: "52 Keeping Still gèn", moon: "🌖" },
+                { sym: "☵", name: "53 Development jiàn", moon: "🌖" },
+                {
+                  sym: "☲",
+                  name: "54 The Marrying Maiden gūi mèi",
+                  moon: "🌗",
+                },
+                { sym: "☴", name: "55 Abundance fēng", moon: "🌗" },
+                { sym: "☱", name: "56 The Wanderer lǔ", moon: "🌗" },
+                { sym: "☰", name: "57 The Gentle xùn", moon: "🌘" },
+                { sym: "☷", name: "58 The Joyous dùi", moon: "🌘" },
+                { sym: "☳", name: "59 Dispersion huàn", moon: "🌘" },
+                { sym: "☶", name: "60 Limitation jíe", moon: "🌑" },
+                { sym: "☵", name: "61 Inner Truth zhōng fú", moon: "🌑" },
+                {
+                  sym: "☲",
+                  name: "62 Preponderance of the Small xiǎo gùo",
+                  moon: "🌒",
+                },
+                { sym: "☴", name: "63 After Completion jì jì", moon: "🌒" },
+                { sym: "☱", name: "64 Before Completion wèi jì", moon: "🌒" },
+              ].map((row, i) => (
+                <tr
+                  key={row.name}
+                  style={{
+                    background:
+                      i % 2 === 0 ? "rgba(255,255,255,0.03)" : "transparent",
+                  }}
+                >
+                  <td
+                    className="border border-gray-700 px-3 py-1 text-xl text-center"
+                    style={{ color: "#C8862A" }}
+                  >
+                    {row.sym}
+                  </td>
+                  <td className="border border-gray-700 px-3 py-1 text-gray-200">
+                    {row.name}
+                  </td>
+                  <td className="border border-gray-700 px-3 py-1 text-lg text-center">
+                    {row.moon}
+                  </td>
+                </tr>
+              ))}
+              {/* Equinox / Solstice rows */}
+              <tr style={{ background: "rgba(200,134,42,0.1)" }}>
+                <td
+                  className="border border-gray-600 px-3 py-2 text-xl text-center"
+                  style={{ color: "#C8862A" }}
+                >
+                  ☲
+                </td>
+                <td
+                  className="border border-gray-600 px-3 py-2 font-semibold"
+                  style={{ color: "#C8862A" }}
+                >
+                  Spring Equinox
+                </td>
+                <td className="border border-gray-600 px-3 py-2 text-lg text-center">
+                  🌓
+                </td>
+              </tr>
+              <tr style={{ background: "rgba(200,134,42,0.1)" }}>
+                <td
+                  className="border border-gray-600 px-3 py-2 text-xl text-center"
+                  style={{ color: "#C8862A" }}
+                >
+                  ☳
+                </td>
+                <td
+                  className="border border-gray-600 px-3 py-2 font-semibold"
+                  style={{ color: "#C8862A" }}
+                >
+                  Summer Solstice
+                </td>
+                <td className="border border-gray-600 px-3 py-2 text-lg text-center">
+                  🌓
+                </td>
+              </tr>
+              <tr style={{ background: "rgba(200,134,42,0.1)" }}>
+                <td
+                  className="border border-gray-600 px-3 py-2 text-xl text-center"
+                  style={{ color: "#C8862A" }}
+                >
+                  ☴
+                </td>
+                <td
+                  className="border border-gray-600 px-3 py-2 font-semibold"
+                  style={{ color: "#C8862A" }}
+                >
+                  Autumn Equinox
+                </td>
+                <td className="border border-gray-600 px-3 py-2 text-lg text-center">
+                  🌓
+                </td>
+              </tr>
+              <tr style={{ background: "rgba(200,134,42,0.1)" }}>
+                <td
+                  className="border border-gray-600 px-3 py-2 text-xl text-center"
+                  style={{ color: "#C8862A" }}
+                />
+                <td
+                  className="border border-gray-600 px-3 py-2 font-semibold"
+                  style={{ color: "#C8862A" }}
+                >
+                  Winter Solstice
+                </td>
+                <td className="border border-gray-600 px-3 py-2 text-lg text-center">
+                  🌔
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 }
