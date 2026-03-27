@@ -694,6 +694,158 @@ function FiveElements() {
           </table>
         </div>
       </div>
+      <div className="mt-8">
+        <h3 className="text-base font-bold mb-1" style={{ color: "#00BFFF" }}>
+          Balencer Resetting of DNA, mRNA decoding AutoImmune by GaAlAr Spark ❇️
+          Laser+ Ozon Waves 🌊 Generator for Photonic Waves Frequency Health
+          Quantum Bio-Photonic
+        </h3>
+        <p className="text-xs mb-3 italic" style={{ color: "#aaa" }}>
+          DNA Hexagram Bio-Photonic, Bio-Reasonanz Cosmo Energetic oscillator
+          waves Space Medicine's Scientific Vedantic Yogic Äyürvédic Tibétän
+          Homeopathic Herbal Reformatted hardly 10 % usages of Acute Emergency
+          Allopathic Medizine's Prötöcöls....
+        </p>
+        <div className="overflow-x-auto">
+          <table
+            className="text-xs border-collapse"
+            style={{ minWidth: "1100px" }}
+          >
+            <thead>
+              <tr style={{ backgroundColor: "#111" }}>
+                {[
+                  "Product Name",
+                  "Aim of Cure",
+                  "Amino Acid Composition",
+                  "DNA Triplets",
+                  "Associated Meridians",
+                  "Detailed Description",
+                ].map((col) => (
+                  <th
+                    key={col}
+                    className="py-2 px-3 text-left font-bold border border-gray-700 whitespace-nowrap"
+                    style={{ color: "#00BFFF", backgroundColor: "#111" }}
+                  >
+                    {col}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                {
+                  name: "Vezugen",
+                  aim: "Blood Vessel Function",
+                  amino: "Lysine, Glutamic Acid, Aspartic Acid",
+                  dna: "AAA, AAA, AA, AAU",
+                  meridians:
+                    "Large Intestine, Heart, Urinary Bladder, Pancreas, Lungs, Triple Energizer",
+                  desc: "Lysine (AAA, AAU) - Large Intestine and Heart meridians (Fire element). Junior base activates Urinary Bladder, Pancreas, Lungs, and Triple Energizer. Resonates with Gall Bladder (23:00-01:00), supporting anabolic phase and relieving Heart strain.",
+                  color: "#FF6B6B",
+                },
+                {
+                  name: "Ovagen",
+                  aim: "Liver Function",
+                  amino: "Leucine, Glutamic Acid, Aspartic Acid",
+                  dna: "CUC, CUA, CUNG, CUU",
+                  meridians:
+                    "Pericardium, Stomach, Urinary Bladder, Pancreas, Lungs, Triple Energizer",
+                  desc: "Leucine (CUC, CUA, CUNG, CUU) - Pericardium and Stomach meridians. Junior base activates Urinary Bladder, Pancreas, Lungs, and Triple Energizer. Active during Triple Energizer period (21:00-23:00), supporting Liver regeneration.",
+                  color: "#22c55e",
+                },
+                {
+                  name: "Kartalaks",
+                  aim: "Cartilage Function",
+                  amino: "Alanine, Glutamic Acid, Aspartic Acid",
+                  dna: "GCC, GCA, GCG, GCA",
+                  meridians:
+                    "Gall Bladder, Liver, Urinary Bladder, Pancreas, Lungs, Triple Energizer",
+                  desc: "Alanine (GCC, GCA, GCG, GCA) - Gall Bladder and Liver meridians. Junior base activates Urinary Bladder, Pancreas, Lungs, and Triple Energizer. Aligns with Stomach/Pancreas cycle, promoting Metal element vibrations and fluid balance.",
+                  color: "#a78bfa",
+                },
+                {
+                  name: "Pinealon",
+                  aim: "Brain Function",
+                  amino: "Arginine, Glutamic Acid, Aspartic Acid",
+                  dna: "CCG, CGA, CGG, CGG",
+                  meridians:
+                    "Pericardium, Small Intestine, Urinary Bladder, Pancreas, Lungs, Triple Energizer",
+                  desc: "Arginine (CCG, CGA, CGG, CGG) - Pericardium and Small Intestine meridians (Fire). Junior base activates Urinary Bladder, Pancreas, Lungs, and Triple Energizer. Supports Heart circulation, increasing blood nitric oxide and improving metabolism.",
+                  color: "#FF9F43",
+                },
+                {
+                  name: "Kristagen",
+                  aim: "Immune System",
+                  amino: "Proline, Glutamic Acid, Aspartic Acid",
+                  dna: "CCC, CCA, CCU, CCU",
+                  meridians:
+                    "Pericardium, Liver, Urinary Bladder, Pancreas, Lungs, Triple Energizer",
+                  desc: "Proline (CCC, CCA, CCU, CCU) – Pericardium and Liver meridians. Junior base activates Urinary Bladder, Pancreas, Lungs, and Triple Energizer. Active 18:00-19:00 in Kidney meridian, supporting immune system and bone marrow.",
+                  color: "#00BFFF",
+                },
+                {
+                  name: "Honluten",
+                  aim: "Bronchial Mucosa",
+                  amino: "Glycine, Glutamic Acid, Aspartic Acid",
+                  dna: "GGC, GGA, GGG, GGA",
+                  meridians:
+                    "Gall Bladder, Small Intestine, Urinary Bladder, Pancreas, Lungs, Triple Energizer",
+                  desc: "Glycine (GGC, GGA, GGG, GGA) - Gall Bladder and Small Intestine meridians. Junior base activates Urinary Bladder, Pancreas, Lungs, and Triple Energizer. Resonates with Lung activity (04:00-05:00), stimulating mucus metabolism.",
+                  color: "#FFD700",
+                },
+              ].map((row, ri) => (
+                <tr
+                  key={row.name}
+                  style={{
+                    backgroundColor: ri % 2 === 0 ? "#0D0D0D" : "#141414",
+                  }}
+                >
+                  <td
+                    className="py-2 px-3 font-bold border border-gray-700 whitespace-nowrap"
+                    style={{ color: row.color }}
+                  >
+                    {row.name}
+                  </td>
+                  <td
+                    className="py-2 px-3 border border-gray-700 whitespace-nowrap"
+                    style={{ color: row.color }}
+                  >
+                    {row.aim}
+                  </td>
+                  <td
+                    className="py-2 px-3 border border-gray-700"
+                    style={{ color: row.color }}
+                  >
+                    {row.amino}
+                  </td>
+                  <td
+                    className="py-2 px-3 border border-gray-700 whitespace-nowrap"
+                    style={{ color: row.color }}
+                  >
+                    {row.dna}
+                  </td>
+                  <td
+                    className="py-2 px-3 border border-gray-700"
+                    style={{ color: row.color }}
+                  >
+                    {row.meridians}
+                  </td>
+                  <td
+                    className="py-2 px-3 border border-gray-700"
+                    style={{
+                      color: row.color,
+                      maxWidth: "400px",
+                      whiteSpace: "normal",
+                    }}
+                  >
+                    {row.desc}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 }
