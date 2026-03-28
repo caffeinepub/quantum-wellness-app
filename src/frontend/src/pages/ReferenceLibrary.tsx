@@ -40,7 +40,11 @@ type TabId =
 
 const ALL_TABS: { id: TabId; label: string; color: string }[] = [
   { id: "pulse", label: "Pulse Dx", color: "#FF1493" },
-  { id: "fiveElements", label: "5 Elements", color: "#FF9F43" },
+  {
+    id: "fiveElements",
+    label: "5 Elements + 6 Stages & 6 Types of Bio-Photonic, Bio-Reasonanz Qi",
+    color: "#FF9F43",
+  },
   { id: "trigrams", label: "Trigrams", color: "#F7CA18" },
   {
     id: "iching",
@@ -982,6 +986,377 @@ function FiveElements() {
               ))}
             </tbody>
           </table>
+        </div>
+      </div>
+      <div className="mt-8">
+        <h2
+          style={{
+            color: "#FFD700",
+            fontSize: "1.3rem",
+            fontWeight: "bold",
+            marginBottom: "1rem",
+            textAlign: "center",
+          }}
+        >
+          6 Types of Qi — Source, Location, Function
+        </h2>
+        <div
+          style={{
+            border: "1px solid #ca8a04",
+            borderRadius: "8px",
+            padding: "1.5rem",
+            background: "#0a0a0a",
+            color: "#e5e7eb",
+          }}
+        >
+          <p className="mb-3">
+            <strong>Qi (气, chi)</strong> is thought to exist in several forms
+            within the body, each serving a different purpose.
+          </p>
+          <p className="mb-3">
+            Qi (pronounced "chee") is a fundamental concept in traditional
+            Traditional Gölden Bhärat&apos;s healthy lifestyle&apos;s path
+            finder for every single citizen&apos;s health care awareness
+            Knowledge provider Tibétän Nivasi Gölden Göd Lörd Shivä&apos;s
+            TäkshShilä, Näländä, Äjäntä, Éllörä, Lädäkh, Bhütän, Kailäsh
+            Mänsärövär temple&apos;s Hidden Ömkärèshwér Ärdhnärishwär
+            Cave&apos;s Süryä Nädi 🌗, Chändrä Nädi 🌓 &amp; Balencer Middle
+            Süshümnä Nädi 🌕 🌑 Grantham Protocols is often translated as{" "}
+            <strong>"VITAL ENERGY⚡"</strong> or <strong>"LIFE FORCE."</strong>{" "}
+            Qi is believed to be the vital energy that circulates throughout the
+            body, maintaining physical and mental health. Understanding the qi
+            definition is essential for grasping its role in Hidden Ömkärèshwér
+            Ärdhnärishwär Grantham.
+          </p>
+          <p className="mb-3">
+            Qi is classified based on its role and production, distribution, and
+            functional characteristics, including zong qi and gu qi, each with
+            specific functions in the body. Qi is essential for various
+            physiological functions, including circulation, metabolism, and
+            immune response. Each of the Zang–Fu (脏腑) organs has its own Qi
+            (气), which can be separated into Yin and Yang (阴阳) components. Qi
+            has six primary physiological functions; understanding the types of
+            chi helps in comprehending how qi supports overall health and
+            well-being:
+          </p>
+          <ul className="list-disc list-inside mb-3 ml-4">
+            <li>Transforming.</li>
+            <li>Transporting.</li>
+            <li>Holding.</li>
+            <li>Raising.</li>
+            <li>Protecting.</li>
+            <li>Warming.</li>
+          </ul>
+          <p className="mb-4">
+            According to Hiddén Ömkärèshwér Ärdhnärishwär Bäläncer
+            Lifestyle&apos;s Path Finder Prötöcöls Providers Bio-Photonic,
+            Bio-Reasonanz Cosmo Energetic oscillator waves Space Medizine&apos;s
+            Qi/ Light+ Éléctrö Mägnétic Pöténtiäl Fiéld of Lünär Sölär Spéctrüpm
+            Cölör&apos;s Rädiätiön of Éffects on Meridian is broken down into:
+          </p>
+          <div className="mb-4 ml-2 space-y-1">
+            <p>
+              2️⃣ <strong>Gu (Food/Grain Qi):</strong> The 1st stage of Energy ⚡
+              Transformation, Produced by the Spleen &amp; Stomach in the
+              Digestion of Food &amp; Drink.
+            </p>
+            <p>
+              3️⃣ <strong>Zong (Gathering/Ancestral Qi):</strong> Formed in the
+              Chest by Combining Inhaled air (via Lungs) &amp; Gu Qi (via
+              Spleen). It Powers Respiration, Blood Circulation, &amp; Speech.
+            </p>
+            <p>
+              4️⃣ <strong>Zhen (True/ True Qi):</strong> The Final stage of
+              Transformation derived from Zong Qi. It Circulates in Meridians
+              &amp; Örgäns, Further Refined into Wei &amp; Ying Qi.
+            </p>
+            <p>
+              5️⃣ <strong>Wei (Defensive Qi):</strong> A Fast-Moving Type of True
+              Qi that Flows Outside Meridians, Protecting the Body Against
+              External pathogenic Factors (Viruses/Bacteria) &amp; Controlling
+              Body Temperature.
+            </p>
+            <p>
+              6️⃣ <strong>Ying (Nutritive Qi):</strong> Deep-Circulating True Qi
+              within the Vessels that Nourishes Örgäns &amp; Tissues, Acting in
+              Tandem with Blood Circulation.
+            </p>
+            <p>
+              7️⃣ <strong>Zhong Qi</strong> (Central Qi of the Spleen/Stomach),
+            </p>
+            <p>
+              8️⃣ <strong>Zheng Qi</strong> (Upright Qi/True Qi),
+            </p>
+            <p>
+              9️⃣ <strong>Xie Qi</strong> (Pathogenic Qi).
+            </p>
+            <p className="mt-2">
+              These Self Generated Power house of Natural Forces AutoImmune
+              Photonic Waves 🌊+ Frequency Health Bio-Photonic Bio-Reasonanz
+              Energies Manages Metabolism, Defense, &amp; Vital Örgäns Functions
+              to Maintain Homeostasis &amp; Health.
+            </p>
+          </div>
+
+          {/* 1 - Yuan Qi */}
+          <div className="mb-6">
+            <h3
+              style={{
+                color: "#FFD700",
+                fontWeight: "bold",
+                fontSize: "1.1rem",
+                marginBottom: "0.5rem",
+              }}
+            >
+              1️⃣ Yuan Qi (Primordial Qi) （元气）
+            </h3>
+            <p className="mb-2">
+              Yuan (Original/Primordial Qi): Foundational Energy⚡derived from
+              Parents at Conception, its origins &amp; Stored in the Kidneys,
+              &amp; Supported by Nutrients After Birth. It is the Root of all
+              other forms of Life Force Qi.
+            </p>
+            <p className="mb-2">
+              <strong>Functions of 1️⃣ Yuan Qi (元气) as Moving Force:</strong> –
+              It is the dynamic force that stimulates the functional activity of
+              all the organs and circulates throughout the body in the channels.
+            </p>
+            <p className="mb-2">
+              <strong>Basis of Kidney-Qi:</strong> – It resides between the
+              Kidneys, below the umbilicus at the Gate of Vitality or Ming Men
+              (命门）. As such, it shares the role of providing the heat
+              necessary to all the body&apos;s functional activities.
+            </p>
+            <p className="mb-2">
+              <strong>Facilitates Transformation of Qi:</strong> – 1️⃣ Yuan Qi is
+              the &apos;agent of change&apos;, transforming 7️⃣ Zhong Qi (Central
+              Qi of the Spleen/Stomach), into 8️⃣ Zhen Qi (Upright Qi/True Qi).
+            </p>
+            <p className="mb-2">
+              <strong>Facilitates Transformation of Blood:</strong> – 1️⃣ Yuan Qi
+              facilitates the transformation of 2️⃣ Gu Qi "that is (Food/Grain
+              Qi). : The 1st stage of Energy ⚡ Transformation, Produced by the
+              Spleen &amp; Stomach in the Digestion of Food &amp; Drink." into
+              Blood (血）in the Heart （心）,
+            </p>
+            <p>
+              <strong>Emerges at the Source Points:</strong> – 1️⃣ Yuan Qi
+              originates where the Ming Men resides, &amp; then passes through
+              the San Jiao (TRIPLE BURNER) (三焦）, spreading to the organs and
+              channels. The places where 1️⃣ Yuan Qi emerges are known as the
+              Source Points.
+            </p>
+          </div>
+
+          {/* 2 - Gu Qi */}
+          <div className="mb-6">
+            <h3
+              style={{
+                color: "#FFD700",
+                fontWeight: "bold",
+                fontSize: "1.1rem",
+                marginBottom: "0.5rem",
+              }}
+            >
+              2️⃣ Gu Qi (Food Qi) （谷气）
+            </h3>
+            <p>
+              The 2nd form in the classification of Qi is 2️⃣ Gu Qi (谷气), which
+              means &apos;Qi of Grains&apos; or &apos;Qi of Food&apos; and is
+              the 1st stage of the transformation of Qi. Food entering the
+              stomach is digested, or &apos;rotted and ripened&apos; according
+              to TäkshShilä, Näländä, Äjäntä, Éllörä, Lädäkh, Bhütän, Kailäsh
+              Mänsärövär temple&apos;s Hidden Ömkärèshwér Ärdhnärishwär
+              Cave&apos;s Grantham theory, and is transformed into 2️⃣ Gu Qi by
+              the SPLEEN. At this stage it is not yet usable by the body. It
+              must rise from the Middle Jiao to the chest and travels to the
+              Lungs, combining with air to form 7️⃣ Zhong Qi (Central Qi of the
+              Spleen/Stomach), (Gathering or Pectoral Qi). 2️⃣ Gu Qi (谷气) also
+              rises from the Middle Jiao (中焦), through the Lungs and on to the
+              HEART where it is transformed into Blood.
+            </p>
+          </div>
+
+          {/* 3 - Zong Qi */}
+          <div className="mb-6">
+            <h3
+              style={{
+                color: "#FFD700",
+                fontWeight: "bold",
+                fontSize: "1.1rem",
+                marginBottom: "0.5rem",
+              }}
+            >
+              3️⃣ Zong Qi (Gathering Qi) （宗气）
+            </h3>
+            <p className="mb-2">
+              The 3rd form in the classification of Qi is 3️⃣ Zong Qi (宗气),
+              referred to as either Gathering or Pectoral Qi. It is derived
+              through the interaction of 2️⃣ Gu Qi with air. It accumulates in the
+              chest and aids in respiration and circulation. It&apos;s a more
+              subtle and refined form of Qi than 2️⃣ Gu Qi and its main functions
+              within the body are{" "}
+              <strong>WARMING &amp; NOURISHING the HEART and LUNGS.</strong>
+            </p>
+            <ul className="list-disc list-inside mb-2 ml-4">
+              <li>Promoting LUNGS functions to CONTROL Qi and BREATHING.</li>
+              <li>
+                Promotes the Heart function of governing Blood and vessels and
+                promotes blood circulation to the rest of the body.
+              </li>
+              <li>It is responsible for CONTROLLING SPEECH and the VOICE.</li>
+            </ul>
+            <p>
+              As 3️⃣ Zong Qi is the ÉNÉRGY OF the CHEST, the area where it gathers
+              is sometimes referred to as the &apos;SEA 🌊 of QI&apos; and it
+              can be affected by EMOTIONAL DISTÜRBÄNCÉS such as SORROW and GRIEF
+              which deplete LUNG Qi. If 3️⃣ Zong Qi is WEAK or deficient, the
+              EXTREMITIES of the body (HANDS &amp; FEET) can become COLD ❄️ &amp;
+              WEAK.
+            </p>
+          </div>
+
+          {/* 4 - Zhen Qi */}
+          <div className="mb-6">
+            <h3
+              style={{
+                color: "#FFD700",
+                fontWeight: "bold",
+                fontSize: "1.1rem",
+                marginBottom: "0.5rem",
+              }}
+            >
+              4️⃣ Zhen Qi (True Qi)
+            </h3>
+            <p className="mb-2">
+              4️⃣ Zhen Qi or True Qi is the FINAL STAGE of the TRANSFORMATION of
+              Qi. Through the action of 4️⃣ Zong Qi, 1️⃣ Yuan Qi is transformed into
+              4️⃣ Zhen Qi. Upright Qi represents the body&apos;s OVERALL ABILITY
+              to MAINTAIN HEALTH &amp; Resist Disease. It is the SUM of ALL
+              TYPES of Qi Working Harmoniously.
+            </p>
+            <p>
+              This is the Final Version and refinement of Qi and results in the
+              Qi which flows through the channels. 4️⃣ Zhen Qi Originates in the
+              LUNGS &amp; takes on 2 different Forms: 6️⃣ Ying (Nutritive Qi):
+              Deep-Circulating True Qi within the Vessels that Nourishes Örgäns
+              &amp; Tissues, Acting in Tandem with Blood Circulation. &amp; 5️⃣
+              Wei (Defensive Qi): A Fast-Moving Type of True Qi that Flows
+              Outside Meridians, Protecting the Body Against External pathogenic
+              Factors (Viruses/Bacteria) &amp; Controlling Body Temperature.
+              This is the Penultimate Classification of Qi/ ची का अंतिम-पूर्व
+              वर्गीकरण/ Qi का उपान्तिम वर्गीकरण।
+            </p>
+          </div>
+
+          {/* 5 - Ying Qi */}
+          <div className="mb-6">
+            <h3
+              style={{
+                color: "#FFD700",
+                fontWeight: "bold",
+                fontSize: "1.1rem",
+                marginBottom: "0.5rem",
+              }}
+            >
+              5️⃣ Ying Qi (Nutritive Qi)
+            </h3>
+            <p>
+              It is also known as Nourishing Qi and has the Function of
+              Nourishing the Zang/Yin/Chändrä Nädi 🌓 Örgäns - Fu/ Yäng/Süryä
+              Nädi Örgäns (脏腑 and the body as a whole. It holds a close
+              relationship with BLOOD and FLOWS THROUGH the VESSELS and also the
+              channels. according to TäkshShilä, Näländä, Äjäntä, Éllörä,
+              Lädäkh, Bhütän, Kailäsh Mänsärövär temple&apos;s Hidden
+              Ömkärèshwér Ärdhnärishwär Cave&apos;s Grantham theory, this is the
+              Qi that is activated whenever an Bio-Photonic, Bio-Reasonanz Cosmo
+              Energetic oscillator waves Space Medicine&apos;s Scientific
+              Vedantic Yogic Äyürvédic Tibétän Homeopathic Reformatted
+              Allopathic Medizine Laser acupuncture Centripetal, Centrifugal,
+              elliptical Natural Forces AutoImmune Photonic Waves Frequency,
+              intensity into Neuronal Nerven Networks Pléxüs Äcüpünctüré
+              Points...... Which can Successfully Cures, Controls, Preventing
+              even the Symptoms of Diseases before to Manifest.....
+            </p>
+          </div>
+
+          {/* 6 - Wei Qi */}
+          <div className="mb-6">
+            <h3
+              style={{
+                color: "#FFD700",
+                fontWeight: "bold",
+                fontSize: "1.1rem",
+                marginBottom: "0.5rem",
+              }}
+            >
+              6️⃣ Wei Qi (Defensive Qi)
+            </h3>
+            <p className="mb-2">
+              The Final type of classification of Qi is 6️⃣ Wei Qi. The word
+              &apos;Wei&apos; Means to DEFEND or PROTECT. When compared to 5️⃣
+              Ying Qi it is More Coarse अधिकं स्थूलम्। ज़्यादा खुरदुरा. વધુ ખરાબ રીતે. It
+              Flows in the Outer Layers of the body, in SKIN and MUSCLES. As it
+              Resides on the Exterior, its FUNCTION is to PROTECT the BODY from
+              an ATTACK of EXTERIOR PATHOGENIC factors such as Wind, Heat, Cold
+              and Damp.
+            </p>
+            <p className="mb-2">
+              It also controls the OPENING and CLOSURE of PORES while Warming,
+              Moistening, and Partially Nourishing the Skin and Muscles. Through
+              this, it Regulates both Sweating and Body Temperature.
+            </p>
+            <p className="mb-2">
+              Like 4️⃣ Zhen Qi, it is also under the CONTROL of the LUNGS, as
+              such, WEAKNESS or DEFICIENCY of the LUNGS can result in a WEAKNESS
+              of Wei Qi which can Leave a Person Prone to FREQUENT COLDS and/or
+              FLU.
+            </p>
+            <p className="mb-2">
+              So that&apos;s why Ömkärèshwér Ärdhnärishwär Bäläncér
+              Lifestyle&apos;s Gränth&apos;s for Successful Diagnosis,
+              Prognosis, Preventive, Curative, Medikamente Testen to know in
+              advance before to intake any Medizine&apos;s effects &amp; side
+              effects, therapeutic protocols for incurable Diseases where ever
+              any other therapies had have been failed or Collapsed....
+            </p>
+            <p>
+              So this is how, all 6 types of Qi must be in harmony for a person
+              to function optimally to achieve Successful lifestyle path finder
+              Prövidérs Protector integration Protocols
+            </p>
+          </div>
+
+          {/* Summary */}
+          <div
+            style={{
+              color: "#FFD700",
+              borderTop: "1px solid #ca8a04",
+              paddingTop: "1rem",
+              marginTop: "1rem",
+            }}
+          >
+            <p>Lesser Yang/ Süryä Nädi 🌗 (shaoyang),</p>
+            <p>Major Yang/ Süryä Nädi 🌗 (Tài Yäng),</p>
+            <p>Yang/ Süryä Nädi 🌗 Brightness 🔆 (Yang Ming),</p>
+            <p>Lesser Yin/ Chändrä Nädi 🌓 (Shao Yin),</p>
+            <p>Major Yin/ Chändrä Nädi 🌓 (Tai Yin), and</p>
+            <p className="mb-3">exhausted Yin/ Chändrä Nädi 🌓 (Jue Yin).</p>
+            <p className="mb-1">
+              <strong>6 Functions of Qi...:</strong> to Defend, Control, Propel,
+              Warm, Nourish and Transform.
+            </p>
+            <p className="mb-1">
+              6 Types 6 Qi &amp; 6 Yin/ Chändrä Nädi 🌓 of Depicted Qi as
+            </p>
+            <p className="mb-1">
+              Wind 🍃, Cold ❄️, Heat 🔥, Moisture, Dryness, Fire 🔥
+            </p>
+            <p>
+              5 Movements &amp; 6 Qi Creates 60 year Tibetan Calendar, &amp;
+              whose changes affect human beings subject to these influences.
+            </p>
+          </div>
         </div>
       </div>
     </div>
