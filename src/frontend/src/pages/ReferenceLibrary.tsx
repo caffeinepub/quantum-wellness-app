@@ -279,6 +279,59 @@ function WristColumn({
   );
 }
 
+const ORGANALE_ROWS = [
+  {
+    element: "Fire 🔥 / Fire Minister 🔥",
+    organ: "Heart / Small Intestine / Pericardium / Triple Warmer",
+    color: "#FF1493",
+    organale: "Golgi Apparatus (GA) — Post Office",
+    functions:
+      "Structure: A Series of Stacked, Flattened Pouches Called Cisternae.\n\nFunction: Receives, modifies, sorts, & Packages Proteins & Lipids from the ER for Transport.\n\nKey Detail: Tags Products with Sugar Molecules to identify their Final Destination.\n\nMembrane Type: Single\nPrimary Function: Processing & Packaging",
+    communication:
+      "Sarcoplasmic Reticulum (SR) — This is a specialized, modified smooth endoplasmic reticulum that wraps around myofibrils. It functions as the primary storage site for calcium ions (Ca2+). Upon receiving a nerve signal, the SR releases Ca2+ to initiate contraction, and then actively pumps it back to facilitate relaxation.",
+  },
+  {
+    element: "Water 💧",
+    organ: "Kidney / Urinary Bladder",
+    color: "#00BFFF",
+    organale: "Plasma Membrane (PM) — Cell Boundary",
+    functions:
+      "Structure: A Thin, Flexible Phospholipid Bilayer that Separates the cell from its Environment.\n\nFunction: Acts as a Selectively Permeable barrier, regulating what enters & leaves the Bio-Photonic, Bio-Reasonanz cell.\n\nKey Detail: Participates actively in passive & active transport to maintain homeostasis.\n\nMembrane Type: Single (Lipid Bilayer)\nPrimary Function: Selective Permeability & Protection / चयनात्मक पारगम्यता एवं संरक्षण",
+    communication:
+      "Sarcolemma & T-tubules — The sarcolemma is the muscle cell membrane. Transverse tubules (T-tubules) are deep invaginations of the sarcolemma that allow electrical impulses (action potentials) to rapidly travel to the interior of the muscle fiber, ensuring the entire cell contracts uniformly.",
+  },
+  {
+    element: "Metal",
+    organ: "Lung / Large Intestine",
+    color: "#C0C0C0",
+    organale: "Mitochondria — The Powerhouse",
+    functions:
+      "Structure: Double Membrane-Bound, Bean-Shaped Organelles with their own DNA & ribosomes.\n\nFunction: Produces Energy ⚡ (ATP = Adenosine Tri Phosphate, Primary Energy ⚡ Carrier Molecule Found in all Living Cells) for Bio-Photonic, Bio-Reasonanz Cell through Aerobic Cellular Respiration.\n\nATP: Structure: Consists of adenosine (Adenine + Ribose Sugar) & 3 phosphate groups. Function: Releases energy when a phosphate bond is broken, converting ATP into ADP (Adenosine Diphosphate). Role: Essential for Active Transport, Protein synthesis, & Muscle Contraction.\n\nKey Detail: Considered Semi-Autonomous Due to having their own Genetic Material.\n\nMembrane Type: Double\nPrimary Function: ATP Generation (Bio-Photonic, Bio-Reasonanz Respiration)",
+    communication:
+      "Mitochondria (Sarcosomes) — These powerhouses are exceptionally abundant in muscle cells, particularly type I and IIa fibers, which require high energy (ATP) for sustained movement. They provide the energy required for myosin heads to pull actin, for the sarcoplasmic reticulum to pump calcium back, and for muscle repair.",
+  },
+  {
+    element: "Soil / Earth 🌎",
+    organ: "Spleen / Stomach",
+    color: "#FFD700",
+    organale: "Lysosomes — Recycling Centers",
+    functions:
+      "Structure: Single Membrane-Bound Vesicles containing acidic hydrolytic enzymes.\n\nFunction: Digests Unwanted Material, Foreign Invaders, and old Bio-Photonic, Bio-Reasonanz Cellular parts (autophagy).\n\nKey Detail: Highly Acidic Interior allows Digestive enzymes to work optimally.\n\nMembrane Type: Single\nPrimary Function: Digestion & Waste Removal",
+    communication:
+      "Nuclei (Multinucleated) — Skeletal muscle cells are multinucleated, formed from the fusion of many myoblasts. These multiple nuclei are crucial for managing the intense metabolic needs of a large cell and are essential for protein synthesis (hypertrophy) during muscle expansion and repair.",
+  },
+  {
+    element: "Tree / Wood 🎄",
+    organ: "Liver / Gallbladder",
+    color: "#00C800",
+    organale: "Endoplasmic Reticulum (ER) — Production Facility",
+    functions:
+      "Structure: A Network of Membranous Tubules & Sacs (Cisternae) continuous with the Nuclear Membrane.\n\nTypes & Functions:\n• Rough ER (RER): Studded with Ribosomes; Synthesizes Proteins.\n• Smooth ER (SER): Lacks Ribosomes; Synthesizes Lipids & Detoxifies Bio-Photonic, Bio-Reasonanz Cellular Neuronal Nerven Networks.\n\nKey Detail: Acts as a Major Transport Network Within the Bio-Photonic, Bio-Reasonanz Cellular Neuronal Nerven Networks.\n\nMembrane Type: Single\nPrimary Function: Protein/Lipid Synthesis & Transport",
+    communication:
+      "Myofibrils (containing Sarcomeres) — These are the long, cylindrical contractile organelles that fill the sarcoplasm. They are made of repeating functional units called sarcomeres, which shorten during contraction to create movement. Thin (actin) filaments slide over thick (myosin) filaments to cause contraction.",
+  },
+];
+
 const SCANNING_PARAMS_COLS = [
   "Organ",
   "Emotion",
@@ -693,6 +746,86 @@ function FiveElements() {
                       </td>
                     );
                   })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      {/* 5 Örägànälè Table */}
+      <div className="mt-8">
+        <h3 className="text-base font-bold mb-3" style={{ color: "#C8862A" }}>
+          Self Generated Powerhouse — Cellular Bio-Photonic, Bio-Reasonanz 5
+          Örägànälè
+        </h3>
+        <div className="overflow-x-auto">
+          <table className="text-xs border-collapse w-full">
+            <thead>
+              <tr style={{ backgroundColor: "#111" }}>
+                {[
+                  "5 Elements",
+                  "Organs",
+                  "Self Generated Powerhouse — Cellular Bio-Photonic, Bio-Reasonanz 5 Örägànälè",
+                  "5 Örägànälè's Functions",
+                  "5 Organale Cellular Bio-Photonic, Bio-Reasonanz Communication",
+                ].map((h) => (
+                  <th
+                    key={h}
+                    className="py-2 px-3 text-left font-bold border border-gray-700"
+                    style={{
+                      color: "#C8862A",
+                      backgroundColor: "#111",
+                      minWidth:
+                        h === "5 Elements"
+                          ? "160px"
+                          : h === "Organs"
+                            ? "200px"
+                            : "320px",
+                    }}
+                  >
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {ORGANALE_ROWS.map((row, ri) => (
+                <tr
+                  key={row.element}
+                  style={{
+                    backgroundColor: ri % 2 === 0 ? "#0D0D0D" : "#141414",
+                  }}
+                >
+                  <td
+                    className="py-2 px-3 font-bold border border-gray-700 align-middle text-center"
+                    style={{ color: row.color }}
+                  >
+                    {row.element}
+                  </td>
+                  <td
+                    className="py-2 px-3 border border-gray-700 align-middle text-center"
+                    style={{ color: row.color }}
+                  >
+                    {row.organ}
+                  </td>
+                  <td
+                    className="py-2 px-3 border border-gray-700 align-middle text-center"
+                    style={{ color: row.color }}
+                  >
+                    {row.organale}
+                  </td>
+                  <td
+                    className="py-2 px-3 border border-gray-700 align-top whitespace-pre-line"
+                    style={{ color: row.color, maxWidth: "400px" }}
+                  >
+                    {row.functions}
+                  </td>
+                  <td
+                    className="py-2 px-3 border border-gray-700 align-top"
+                    style={{ color: row.color, maxWidth: "360px" }}
+                  >
+                    {row.communication}
+                  </td>
                 </tr>
               ))}
             </tbody>
