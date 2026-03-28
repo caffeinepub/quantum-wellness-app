@@ -42,7 +42,11 @@ const ALL_TABS: { id: TabId; label: string; color: string }[] = [
   { id: "pulse", label: "Pulse Dx", color: "#FF1493" },
   { id: "fiveElements", label: "5 Elements", color: "#FF9F43" },
   { id: "trigrams", label: "Trigrams", color: "#F7CA18" },
-  { id: "iching", label: "I Ching", color: "#A8E063" },
+  {
+    id: "iching",
+    label: `I Ching/ "/ TäkshShilä, Näländä, Äjäntä, Éllörä, Lädäkh, Bhütän, Kailäsh Mänsärövär temple's Hidden Ömkärèshwer Ärdhnärishwär Cave's  Sämhitä 🔱"`,
+    color: "#A8E063",
+  },
   { id: "acupuncture", label: "Acupuncture", color: "#26de81" },
   { id: "pmaGuide", label: "PMA Guide", color: "#2BCBBA" },
   { id: "triorigin", label: "Triorigin", color: "#45AAF2" },
@@ -1165,13 +1169,392 @@ function EightTrigrams() {
 
 function IChing() {
   return (
-    <div>
-      <GoldTitle>I Ching — 64 Hexagrams</GoldTitle>
+    <div className="space-y-4">
+      <GoldTitle>
+        I Ching — 64 Hexagrams/ &quot;/ TäkshShilä, Näländä, Äjäntä, Éllörä,
+        Lädäkh, Bhütän, Kailäsh Mänsärövär temple&apos;s Hidden Ömkärèshwer
+        Ärdhnärishwär Cave&apos;s Sämhitä 🔱&quot;
+      </GoldTitle>
       <p className="text-sm text-gray-400 leading-relaxed">
         The 64 hexagrams encode all possible states of yin-yang transformation
         across six levels. In bio-photonic diagnosis, hexagram patterns
         correlate with cellular coherence states.
       </p>
+
+      <div className="text-sm text-gray-300 leading-relaxed space-y-4 border border-yellow-700 rounded-lg p-4 bg-gray-900">
+        <p className="font-semibold text-yellow-400">
+          Zhu-xi of Song Dynasty/ Hiddén Ömkärèshwér Ärdhnärishwär who authored
+          &apos;Foundations on the Study of Hiddén Ömkärèshwér Ärdhnärishwär
+          Bäläncér Lifestyle&apos;s Path Finder Gränth&apos;s Prötöcöls
+          Providers Evolutionary Changes&apos; implied:
+        </p>
+
+        <p>
+          &quot;Before the Void, there exists Yin/ Chändrä Nädi 🌓 with
+          intrinsic Yang/Süryä Nädi 🌗; after the Formed,... there exists
+          Yang/Süryä Nädi 🌗 with intrinsic Yin/ Chändrä Nädi 🌓 ... Yin/
+          Chändrä Nädi is the mother of Yang/ Süryä Nädi, ~ while Yang/ Süryä
+          Nädi is the father of Yin/ Chändrä Nädi 🌓. ~ &gt; Thus, the mother
+          begets the son as Fu/Yäng/ Lörd Shivä&apos;s Süryä Nädi, ~ Father
+          begets the daughter as Gou: in furtherance the Yang/ Süryä Nädi 🌗
+          Arises from Fu/Yäng/Süryä Nädi 🌗 &amp; ~ Yin/ Chändrä Nädi 🌓 Arises
+          from Gou.&quot; ~ @ (Note: Fu/ Yäng/ Süryä Nädi 🌗 Trigram has its
+          form as with Yang/ Süryä Nädi 🌗 Starting from its foremost
+          significant place, Gou Attribute has its form as with Yin/ Chändrä
+          Nädi starting from its foremost significant place.) ~ This illustrates
+          the 8 Trigram Principle of Yang/ Süryä Nädi 🌗 has Yin/ Chändrä Nädi
+          🌓 within, ~ &amp; Yin/ Chändrä Nädi 🌓 has Yang/ Süryä Nädi 🌗
+          within.
+        </p>
+
+        <p>
+          &quot;Innate (former heaven) 8 Trigram derives from Absolute which
+          begets Duality, begets 4 Signs, begets 8 Attributes and containing the
+          Great Hiddén Ömkärèshwér Ärdhnärishwär Bäläncér Lifestyle&apos;s Path
+          Finder Prötöcöls Providers Evolutionary Nature within:
+        </p>
+
+        <p>
+          Yang/ Süryä Nädi 🌗 1st appear in the East (Li Kua) &amp; Felt in
+          South (Qian Kua), Yin/ Chändrä Nädi 1st appear in the West (Kan Kua)
+          &amp; felt in the North (Kun Kua). This is also what the Classics have
+          said : &quot;Dragons/ शेष नागेश्वर apart in opposing banks makes
+          Yin/Chändrä Nädi 🌓 &amp; Yang/ Süryä Nädi 🌗.
+        </p>
+
+        <p>
+          &quot;Explained above is the theory of : &quot;Innate (former heaven)
+          being the principle&quot;.
+        </p>
+
+        <p className="font-semibold text-yellow-300 mt-4">
+          Five Elements of Xuan Kong
+        </p>
+        <p className="font-medium text-yellow-200">
+          Segregation of the 5 elements
+        </p>
+
+        <div className="space-y-3">
+          <p className="font-medium text-yellow-200">
+            1. 5 elements by Heavenly Stems and Earthly Branches
+          </p>
+          <p>
+            Heavenly Stems: ~<br />
+            Jia, Yi wood, Bing Ding Fire
+            <br />
+            Mao, Ji earth Gen, Xin metal
+            <br />
+            Ren, Kui water
+            <br />
+            Earthly Branches
+            <br />
+            Yin, Mao wood, Si, Wu fire,
+            <br />
+            Shen, You metal, Hai, Zi waer
+            <br />
+            Chen, Xu, Chou, Wei earth.
+          </p>
+
+          <p className="font-medium text-yellow-200">
+            2. 5 Elements by the Trigram
+          </p>
+          <p>
+            In accordance to Later Heaven Trigram, Qian, Tui Metal, Zhen, Xun
+            Wood, Kun, Gen Earth 🌎, Li is Fire 🔥 &amp; Kan is Water💧
+          </p>
+
+          <p className="font-medium text-yellow-200">3. 5 Elements by He Tu</p>
+          <p>
+            16 as water
+            <br />
+            27 as fire
+            <br />
+            38 as wood
+            <br />
+            49 as metal
+            <br />
+            5,10 as earth.
+          </p>
+
+          <p className="font-medium text-yellow-200">
+            4. 5 Elements by Luo Shu
+          </p>
+          <p>
+            1 is water
+            <br />
+            2, 5, 8 are earth, 3,4 are wood
+            <br />
+            6,7 are metal
+            <br />9 is fire.
+          </p>
+
+          <p className="font-medium text-yellow-200">5. Colour</p>
+          <p>
+            Metal: Golden, silver, white
+            <br />
+            Wood: Green, original wood colour
+            <br />
+            Water: Black, Blue and translucent without colour
+            <br />
+            Fire: Red, orange and purple.
+            <br />
+            Earth: Brown, yellow, shades of earth, coffee in colour.
+          </p>
+
+          <p className="font-medium text-yellow-200">
+            6. Five elements by shape
+          </p>
+          <p>
+            Shapes by the 5 Element&apos;s was 1st observed in Ömkärèshwér
+            Ärdhnärishwär/ Zang Jin Yi a classic book - Chi accumulates to
+            become form of which are 5 Shapes. ~ Fire 🔥 is chiseled; Water 💧is
+            Waves 🌊; Wood is Erect; Metal spherical whilst Earth 🌎 is
+            Squarish. Chi is utmost when all 5 Element&apos;s are Present.
+          </p>
+          <p>
+            Qing Lang Hai Jiao Jin further explained: Metal is round, still
+            &amp; not Moving. Immobile balanced, circular shapes are therefore
+            Good. Mobile, slanted, bloated &amp; forthright. Thus elegant, Moist
+            &amp; Upright are Good. Askew, arrayed Crushed &amp; Distended are
+            Bad.
+          </p>
+          <p>
+            Water💧is Moving &amp; Naturally Downward Smooth Flowing. Waves upon
+            Waves, Curving &amp; Brisk are Good. Diffused, angled, Permeating
+            &amp; languid are bad.
+          </p>
+          <p>
+            Fire 🔥 is Pointed, Upward Moving &amp; active. Jagged, Flaming,
+            ablaze &amp; Brilliant are Good. Dispersed, ruptured &amp; Menacing
+            are bad.
+          </p>
+          <p>
+            Earth 🌎 is Squarish &amp; Sedate. It is Composed &amp; Staid.
+            Ample, stately, well founded and decorous are good. Warped, concave,
+            turgid and hollowed are bad.
+          </p>
+
+          <p className="font-medium text-yellow-200">
+            7. 5 Elements by He Tu periodic twelve yearly cycle
+          </p>
+          <p>i.e. Five elements as controlled by the Sexagenary Characters</p>
+          <p>
+            Wood (Not Water💧?) Age: 1984- 1995
+            <br />
+            Fire 🔥 Age: 1996-2007
+            <br />
+            Earth 🌎 Age: 2008-2019
+            <br />
+            Metal Age: 2020-2019
+            <br />
+            Water💧( Not Earth 🌎?) Age: 2032-2043
+          </p>
+
+          <p className="font-medium text-yellow-200">
+            8. 5 Elements by storeys
+          </p>
+          <p>i.e. five elements of different levels in a high rise building.</p>
+          <p>
+            Water💧: 1, 6, 11, 16, 21, 26th storey etc.
+            <br />
+            Fire 🔥 : 2, 7, 12, 17, 22, 27th storey etc.
+            <br />
+            Wood : 3, 8, 13, 18, 23, 28th storey etc.
+            <br />
+            Metal : 4, 9, 14, 19, 24, 29th storey etc.
+            <br />
+            Earth 🌎 : 5, 10, 15, 20, 25, 30th storey etc.
+          </p>
+        </div>
+
+        <hr className="border-yellow-800 my-4" />
+
+        <p className="font-semibold text-yellow-400">
+          सोंग राजवंश के झू-शी / हिडन ओंकारेश्वर अर्धनारीश्वर — जिन्होंने &apos;हिडन ओंकारेश्वर
+          अर्धनारीश्वर बैलेंसर जीवनशैली के पथ-प्रदर्शक ग्रंथ के प्रोटोकॉल प्रदाताओं में हुए
+          विकासवादी परिवर्तनों के अध्ययन की नींव&apos; नामक ग्रंथ की रचना की थी — ने यह
+          प्रतिपादित किया:
+        </p>
+
+        <p>
+          &quot;शून्यता (Void) से पूर्व, वहाँ &apos;यिन / चंद्र नाड़ी&apos; 🌓 का अस्तित्व
+          होता है, जिसके भीतर अंतर्निहित रूप से &apos;यांग / सूर्य नाड़ी&apos; 🌗 विद्यमान
+          रहती है; और आकार ग्रहण करने (Formed) के पश्चात... वहाँ &apos;यांग / सूर्य
+          नाड़ी&apos; 🌗 का अस्तित्व होता है, जिसके भीतर अंतर्निहित रूप से &apos;यिन /
+          चंद्र नाड़ी&apos; 🌓 विद्यमान रहती है... &apos;यिन / चंद्र नाड़ी&apos; ही
+          &apos;यांग / सूर्य नाड़ी&apos; की जननी (माता) है, ~ जबकि &apos;यांग / सूर्य
+          नाड़ी&apos; ही &apos;यिन / चंद्र नाड़ी&apos; 🌓 के जनक (पिता) हैं। ~ &gt; इस
+          प्रकार, माता ही पुत्र को जन्म देती है, जो &apos;फू / यांग / भगवान शिव की सूर्य
+          नाड़ी&apos; के रूप में प्रकट होता है; ~ और पिता ही पुत्री को जन्म देते हैं, जो
+          &apos;गौ&apos; के रूप में प्रकट होती है: इसी क्रम को आगे बढ़ाते हुए, &apos;यांग /
+          सूर्य नाड़ी&apos; 🌗 का उद्भव &apos;फू / यांग / सूर्य नाड़ी&apos; 🌗 से होता है,
+          ~ और &apos;यिन / चंद्र नाड़ी&apos; 🌓 का उद्भव &apos;गौ&apos; से होता
+          है।&quot; ~ @ (टिप्पणी: &apos;फू / यांग / सूर्य नाड़ी&apos; 🌗 के त्रि-चित्र
+          (Trigram) का स्वरूप ऐसा होता है कि उसमें &apos;यांग / सूर्य नाड़ी&apos; 🌗 का
+          प्रभाव उसके सर्वाधिक महत्वपूर्ण स्थान से प्रारंभ होता है; वहीं, &apos;गौ&apos; गुण
+          (Attribute) का स्वरूप ऐसा होता है कि उसमें &apos;यिन / चंद्र नाड़ी&apos; का
+          प्रभाव उसके सर्वाधिक महत्वपूर्ण स्थान से प्रारंभ होता है।) ~ यह सिद्धांत
+          &apos;अष्ट-त्रिचित्र&apos; (8 Trigram) के उस नियम को स्पष्ट करता है, जिसके
+          अनुसार &apos;यांग / सूर्य नाड़ी&apos; 🌗 के भीतर ही &apos;यिन / चंद्र
+          नाड़ी&apos; 🌓 अंतर्निहित होती है, ~ और &apos;यिन / चंद्र नाड़ी&apos; 🌓 के
+          भीतर ही &apos;यांग / सूर्य नाड़ी&apos; 🌗 अंतर्निहित होती है।
+        </p>
+
+        <p>
+          &quot;सहज (पूर्व स्वर्ग) 8 त्रिग्राम &apos;परम&apos; (Absolute) से उत्पन्न होते
+          हैं, जिससे द्वैत का जन्म होता है, फिर 4 संकेतों का, और उसके बाद 8 गुणों का; तथा इनके
+          भीतर ही &apos;महान गुप्त ओंकारेश्वर अर्धनारीश्वर संतुलनकारी जीवनशैली के मार्गदर्शक
+          प्रोटोकॉल प्रदाताओं&apos; की विकासवादी प्रकृति समाहित है:
+        </p>
+
+        <p>
+          यांग/सूर्य नाड़ी 🌗 सर्वप्रथम पूर्व दिशा (Li Kua) में प्रकट होती है और दक्षिण दिशा
+          (Qian Kua) में अनुभव की जाती है; जबकि यिन/चंद्र नाड़ी 🌓 सर्वप्रथम पश्चिम दिशा
+          (Kan Kua) में प्रकट होती है और उत्तर दिशा (Kun Kua) में अनुभव की जाती है।
+          प्राचीन ग्रंथों (Classics) में भी यही बात कही गई है: &quot;विपरीत तटों पर स्थित
+          &apos;ड्रैगन्स&apos; (यानी शेष नागेश्वर) मिलकर ही यिन/चंद्र नाड़ी 🌓 और यांग/सूर्य
+          नाड़ी 🌗 का निर्माण करते हैं।&quot; &quot;ऊपर जिस सिद्धांत की व्याख्या की गई है,
+          वह है: &apos;सहज (पूर्व स्वर्ग) ही मूल सिद्धांत है&apos;।&quot;
+        </p>
+
+        <p className="font-semibold text-yellow-300">शुआन कोंग के पाँच तत्व</p>
+        <p className="font-medium text-yellow-200">5 तत्वों का वर्गीकरण</p>
+
+        <div className="space-y-3">
+          <p className="font-medium text-yellow-200">
+            1. स्वर्गीय तनों (Heavenly Stems) और पार्थिव शाखाओं (Earthly Branches) के
+            आधार पर 5 तत्व
+          </p>
+          <p>
+            स्वर्गीय तने: ~<br />
+            जिया, यी (लकड़ी); बिंग, डिंग (अग्नि)
+            <br />
+            माओ, जी (पृथ्वी); जेन, शिन (धातु)
+            <br />
+            रेन, कुई (जल)
+            <br />
+            पार्थिव शाखाएँ:
+            <br />
+            यिन, माओ (लकड़ी); सी, वू (अग्नि)
+            <br />
+            शेन, यू (धातु); हाई, ज़ी (जल)
+            <br />
+            चेन, ज़ू, चोउ, वेई (पृथ्वी)
+          </p>
+
+          <p className="font-medium text-yellow-200">
+            2. ट्राइग्राम (त्रिकोण) के आधार पर 5 तत्व
+          </p>
+          <p>
+            &apos;बाद के स्वर्ग&apos; (Later Heaven) के ट्राइग्राम के अनुसार: कियान, तुई
+            (धातु); झेन, ज़ुन (लकड़ी); कुन, जेन (पृथ्वी 🌎); ली (अग्नि 🔥) और कान (जल 💧)
+            हैं।
+          </p>
+
+          <p className="font-medium text-yellow-200">
+            3. &apos;हे तू&apos; (He Tu) के आधार पर 5 तत्व
+          </p>
+          <p>
+            1 और 6 (जल)
+            <br />2 और 7 (अग्नि)
+            <br />3 और 8 (लकड़ी)
+            <br />4 और 9 (धातु)
+            <br />5 और 10 (पृथ्वी)
+          </p>
+
+          <p className="font-medium text-yellow-200">
+            4. &apos;लुओ शू&apos; (Luo Shu) के आधार पर 5 तत्व
+          </p>
+          <p>
+            1 (जल)
+            <br />
+            2, 5, 8 (पृथ्वी); 3, 4 (लकड़ी)
+            <br />
+            6, 7 (धातु)
+            <br />9 (अग्नि)
+          </p>
+
+          <p className="font-medium text-yellow-200">5. रंग</p>
+          <p>
+            धातु: सुनहरा, चांदी जैसा, सफेद
+            <br />
+            लकड़ी: हरा, लकड़ी का मूल रंग
+            <br />
+            जल: काला, नीला और रंगहीन (पारदर्शी)
+            <br />
+            अग्नि: लाल, नारंगी और बैंगनी
+            <br />
+            पृथ्वी: भूरा, पीला, पृथ्वी के विभिन्न शेड्स, कॉफी जैसा रंग
+          </p>
+
+          <p className="font-medium text-yellow-200">6. आकार के आधार पर 5 तत्व</p>
+          <p>
+            5 तत्वों के आधार पर आकारों का अवलोकन सबसे पहले &apos;ज़ैंग जिन यी&apos; (Zang
+            Jin Yi) नामक एक क्लासिक ग्रंथ में किया गया था। इसके अनुसार: &apos;ची&apos;
+            (Chi) एकत्रित होकर आकार ग्रहण करती है, जो पाँच प्रकार के होते हैं। ~ अग्नि 🔥
+            का आकार नुकीला (छैनी जैसा) होता है; जल 💧 का आकार लहरों 🌊 जैसा होता है;
+            लकड़ी का आकार सीधा (खड़ा) होता है; धातु का आकार गोलाकार होता है, जबकि
+            पृथ्वी 🌎 का आकार चौकोर होता है। जब सभी 5 तत्व उपस्थित होते हैं, तो
+            &apos;ची&apos; अपने चरम पर होती है।
+          </p>
+          <p>
+            &apos;चिंग लांग हाई जिओ जिन&apos; (Qing Lang Hai Jiao Jin) ने आगे स्पष्ट
+            किया है: धातु गोल होती है, स्थिर होती है और गतिमान नहीं होती। इसलिए, अचल,
+            संतुलित और गोलाकार आकृतियाँ शुभ मानी जाती हैं। जो आकृतियाँ गतिशील, तिरछी, फूली
+            हुई या बहुत अधिक सीधी (कठोर) होती हैं, वे अशुभ होती हैं। इसके विपरीत, जो
+            आकृतियाँ सुरुचिपूर्ण, नम (कोमल) और सीधी (संतुलित) होती हैं, वे शुभ होती हैं। जो
+            आकृतियाँ टेढ़ी-मेढ़ी, अस्त-व्यस्त, दबी हुई या अत्यधिक फैली हुई होती हैं, वे अशुभ होती
+            हैं।
+          </p>
+          <p>
+            जल 💧 गतिशील होता है और स्वाभाविक रूप से नीचे की ओर प्रवाहित होता हुआ चिकना
+            (सहज) होता है। बहता हुआ। लहरों पर लहरें, घुमावदार और तेज़ होना अच्छा है। बिखरा
+            हुआ, कोणीय, अंदर तक जाने वाला और धीमा होना बुरा है।
+          </p>
+          <p>
+            अग्नि 🔥 नुकीली, ऊपर की ओर जाने वाली और सक्रिय होती है। ऊबड़-खाबड़, लपटों
+            वाली, जलती हुई और चमकदार होना अच्छा है। बिखरी हुई, टूटी हुई और खतरनाक होना
+            बुरा है।
+          </p>
+          <p>
+            पृथ्वी 🌎 चौकोर और शांत होती है। यह संयमित और स्थिर होती है। विशाल, भव्य,
+            सुदृढ़ और शालीन होना अच्छा है। टेढ़ी-मेढ़ी, अंदर की ओर धंसी हुई, फूली हुई और खोखली
+            होना बुरा है।
+          </p>
+
+          <p className="font-medium text-yellow-200">
+            7. हे तू (He Tu) के बारह-वर्षीय चक्र के अनुसार 5 तत्व
+          </p>
+          <p>
+            यानी, साठ-वर्षीय पात्रों (Sexagenary Characters) द्वारा नियंत्रित पाँच तत्व।
+          </p>
+          <p>
+            काष्ठ (जल 💧 नहीं?) युग: 1984-1995
+            <br />
+            अग्नि 🔥 युग: 1996-2007
+            <br />
+            पृथ्वी 🌎 युग: 2008-2019
+            <br />
+            धातु युग: 2020-2019
+            <br />
+            जल 💧 (पृथ्वी 🌎 नहीं?) युग: 2032-2043
+          </p>
+
+          <p className="font-medium text-yellow-200">8. मंजिलों के अनुसार 5 तत्व</p>
+          <p>यानी, किसी ऊँची इमारत में अलग-अलग मंजिलों के पाँच तत्व।</p>
+          <p>
+            जल 💧: 1, 6, 11, 16, 21, 26वीं मंजिल आदि।
+            <br />
+            अग्नि 🔥: 2, 7, 12, 17, 22, 27वीं मंजिल आदि।
+            <br />
+            काष्ठ: 3, 8, 13, 18, 23, 28वीं मंजिल आदि।
+            <br />
+            धातु: 4, 9, 14, 19, 24, 29वीं मंजिल आदि।
+            <br />
+            पृथ्वी 🌎: 5, 10, 15, 20, 25, 30वीं मंजिल आदि।
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
