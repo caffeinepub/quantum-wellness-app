@@ -7,6 +7,8 @@ interface PasswordGateProps {
   onUnlock: () => void;
 }
 
+const BRILLIANT_PINK = "#FF3EAC";
+
 export default function PasswordGate({ onUnlock }: PasswordGateProps) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -40,7 +42,7 @@ export default function PasswordGate({ onUnlock }: PasswordGateProps) {
       >
         {/* Logos */}
         <div className="flex flex-col items-center gap-5 mb-8">
-          <div className="flex gap-6 items-center justify-center flex-wrap">
+          <div className="flex gap-1 items-center justify-center flex-wrap">
             <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-white/5 backdrop-blur-sm p-1">
               <img
                 src="/assets/uploads/screenshot_20260327_104232-019d2efb-db1f-72a1-bf3d-17fb01c9a149-1.jpg"
@@ -59,7 +61,7 @@ export default function PasswordGate({ onUnlock }: PasswordGateProps) {
         </div>
 
         {/* Description block */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl px-6 py-6 mb-8 text-center space-y-3 backdrop-blur-md shadow-xl">
+        <div className="bg-black border border-white/10 rounded-2xl px-6 py-6 mb-8 text-center space-y-3 shadow-xl">
           <h1 className="text-xl font-bold text-white tracking-wide leading-snug">
             Globally Synchronized Quantum Wellness
           </h1>
@@ -71,30 +73,32 @@ export default function PasswordGate({ onUnlock }: PasswordGateProps) {
             🌐 WHO Sponsored Scientist
           </p>
 
-          <div className="text-white/70 text-xs leading-relaxed space-y-1">
-            <p className="font-semibold text-white/90">
+          <div className="text-xs leading-relaxed space-y-1">
+            <p className="font-semibold" style={{ color: BRILLIANT_PINK }}>
               MEDICINA ALTERNATIVA INTERNATIONAL — ALMA ATA, USSR
             </p>
-            <p>
+            <p style={{ color: BRILLIANT_PINK }}>
               S.I.A. Paris &nbsp;·&nbsp; EMLA &nbsp;·&nbsp; LLLT &nbsp;·&nbsp;
               HLLT
             </p>
-            <p>
+            <p style={{ color: BRILLIANT_PINK }}>
               European Union's Bioreasonanz Cosmo Energetic Oscillator Waves
             </p>
-            <p>Relationship Bäläncér Prötöcöls Developer</p>
+            <p style={{ color: BRILLIANT_PINK }}>
+              Relationship Bäläncér Prötöcöls Developer
+            </p>
           </div>
 
-          <div className="border-t border-white/10 pt-3 text-white/60 text-xs leading-relaxed space-y-1">
-            <p>
+          <div className="border-t border-white/10 pt-3 text-xs leading-relaxed space-y-1">
+            <p style={{ color: BRILLIANT_PINK }}>
               Hidden Okareshwar ArdhNarishwar Bio-Photonic, Bio-Reasonanz Cosmo
               Energetic Oscillator Waves
             </p>
-            <p>
+            <p style={{ color: BRILLIANT_PINK }}>
               Space Medicine's Scientific Vedantic Yogic Ayurvedic Tibetan
               Herbal Homeopathic Reformatted
             </p>
-            <p>
+            <p style={{ color: BRILLIANT_PINK }}>
               Hardly 10% usage of Allopathic Medicine's for Successful
               Diagnosis, Prognosis, Preventive, Curative, Medikamente Testen —
               to know in advance before intake any Medicine's effects &amp; side
@@ -114,7 +118,8 @@ export default function PasswordGate({ onUnlock }: PasswordGateProps) {
             <p>
               <a
                 href="mailto:dr_ravindra99@rediffmail.com"
-                className="text-indigo-300 hover:text-indigo-200 underline"
+                style={{ color: BRILLIANT_PINK }}
+                className="hover:opacity-80 underline"
               >
                 dr_ravindra99@rediffmail.com
               </a>

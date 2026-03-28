@@ -6,9 +6,9 @@
   :root {
     --radius: 0.5rem;
     /* Dark-only theme — all tokens set once */
-    --background: 0.085 0 0;
+    --background: 0 0 0;
     --foreground: 0.97 0 0;
-    --card: 0.12 0 0;
+    --card: 0.06 0 0;
     --card-foreground: 0.97 0 0;
     --popover: 0.14 0 0;
     --popover-foreground: 0.97 0 0;
@@ -32,7 +32,7 @@
     --chart-3: 0.398 0.07 227.392;
     --chart-4: 0.828 0.189 84.429;
     --chart-5: 0.769 0.188 70.08;
-    --sidebar: 0.1 0 0;
+    --sidebar: 0 0 0;
     --sidebar-foreground: 0.97 0 0;
     --sidebar-primary: 0.65 0.12 62;
     --sidebar-primary-foreground: 0.1 0 0;
