@@ -1010,11 +1010,7 @@ function FiveElements() {
           }}
         >
           <p className="mb-3">
-            <strong>Qi (气, chi)</strong> is thought to exist in several forms
-            within the body, each serving a different purpose.
-          </p>
-          <p className="mb-3">
-            Qi (pronounced "chee") is a fundamental concept in traditional
+            Qi (pronounced &quot;chee&quot;) is a fundamental concept in
             Traditional Gölden Bhärat&apos;s healthy lifestyle&apos;s path
             finder for every single citizen&apos;s health care awareness
             Knowledge provider Tibétän Nivasi Gölden Göd Lörd Shivä&apos;s
@@ -1022,22 +1018,24 @@ function FiveElements() {
             Mänsärövär temple&apos;s Hidden Ömkärèshwér Ärdhnärishwär
             Cave&apos;s Süryä Nädi 🌗, Chändrä Nädi 🌓 &amp; Balencer Middle
             Süshümnä Nädi 🌕 🌑 Grantham Protocols is often translated as{" "}
-            <strong>"VITAL ENERGY⚡"</strong> or <strong>"LIFE FORCE."</strong>{" "}
-            Qi is believed to be the vital energy that circulates throughout the
-            body, maintaining physical and mental health. Understanding the qi
-            definition is essential for grasping its role in Hidden Ömkärèshwér
-            Ärdhnärishwär Grantham.
+            <strong>&quot;VITAL ENERGY⚡&quot;</strong> or{" "}
+            <strong>&quot;LIFE FORCE.&quot;</strong> Qi is believed to be the
+            vital energy that circulates throughout the body, maintaining
+            physical and mental health. Understanding the qi definition is
+            essential for grasping its role in Hidden Ömkärèshwér Ärdhnärishwär
+            Grantham.
           </p>
           <p className="mb-3">
             Qi is classified based on its role and production, distribution, and
             functional characteristics, including zong qi and gu qi, each with
             specific functions in the body. Qi is essential for various
             physiological functions, including circulation, metabolism, and
-            immune response. Each of the Zang–Fu (脏腑) organs has its own Qi
-            (气), which can be separated into Yin and Yang (阴阳) components. Qi
-            has six primary physiological functions; understanding the types of
-            chi helps in comprehending how qi supports overall health and
-            well-being:
+            immune response. Each of the Zang/Yin/Chändrä Nädi 🌓 –Fu/
+            Yäng/Süryä Nädi 🌗 (脏腑) organs has its own Qi (气), which can be
+            separated into Yin/Chändrä Nädi 🌓 and Yang/Süryä Nädi 🌗 (阴阳)
+            components. Qi has six primary physiological functions;
+            understanding the types of chi helps in comprehending how qi
+            supports overall health and well-being:
           </p>
           <ul className="list-disc list-inside mb-3 ml-4">
             <li>Transforming.</li>
@@ -1056,6 +1054,12 @@ function FiveElements() {
           </p>
           <div className="mb-4 ml-2 space-y-1">
             <p>
+              1️⃣ <strong>Yuan (Original/Primordial Qi):</strong> Foundational
+              Energy⚡derived from Parents at Conception, Stored in the Kidneys,
+              &amp; Supported by Nutrients After Birth. It is the Root of all
+              Life Force.
+            </p>
+            <p>
               2️⃣ <strong>Gu (Food/Grain Qi):</strong> The 1st stage of Energy ⚡
               Transformation, Produced by the Spleen &amp; Stomach in the
               Digestion of Food &amp; Drink.
@@ -1066,14 +1070,14 @@ function FiveElements() {
               Spleen). It Powers Respiration, Blood Circulation, &amp; Speech.
             </p>
             <p>
-              4️⃣ <strong>Zhen (True/ True Qi):</strong> The Final stage of
-              Transformation derived from Zong Qi. It Circulates in Meridians
+              4️⃣ <strong>Zhen (True/ True Qi):</strong> The Final Stage of
+              Transformation derived6 from Zong Qi. It Circulates in Meridians
               &amp; Örgäns, Further Refined into Wei &amp; Ying Qi.
             </p>
             <p>
               5️⃣ <strong>Wei (Defensive Qi):</strong> A Fast-Moving Type of True
               Qi that Flows Outside Meridians, Protecting the Body Against
-              External pathogenic Factors (Viruses/Bacteria) &amp; Controlling
+              External pathogenic6 Factors (Viruses/Bacteria) &amp; Controlling
               Body Temperature.
             </p>
             <p>
