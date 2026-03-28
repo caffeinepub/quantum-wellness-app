@@ -1340,12 +1340,25 @@ function FiveElements() {
               marginTop: "1rem",
             }}
           >
-            <p>Lesser Yang/ Süryä Nädi 🌗 (shaoyang),</p>
-            <p>Major Yang/ Süryä Nädi 🌗 (Tài Yäng),</p>
-            <p>Yang/ Süryä Nädi 🌗 Brightness 🔆 (Yang Ming),</p>
-            <p>Lesser Yin/ Chändrä Nädi 🌓 (Shao Yin),</p>
-            <p>Major Yin/ Chändrä Nädi 🌓 (Tai Yin), and</p>
-            <p className="mb-3">exhausted Yin/ Chändrä Nädi 🌓 (Jue Yin).</p>
+            <p>
+              6️⃣ Major/ Greater Yang/ Süryä Nädi 🌗 (Tài Yäng), Maximum
+              Yäng/Süryä Nädi &amp; Minimum Yin/ Chändrä Nädi, Fu/Yäng Ming
+              Örgäns Channels
+            </p>
+            <p>
+              5️⃣ Yang/ Süryä Nädi 🌗 Brightness 🔆 (Yang Ming), Tai Yäng
+              Fu/Yäng/Süryä Nädi Accumulation of Xu/ Blood
+            </p>
+            <p>
+              4️⃣ Lesser Yang/ Süryä Nädi 🌗 (shaoyang), Tai Yäng Fu/Yäng/Süryä
+              Nädi Accumulation of Water 💧
+            </p>
+            <p>3️⃣ Major/ Greater Yin/ Chändrä Nädi 🌓 (Tai Yin),</p>
+            <p>2️⃣ Lesser Yin/ Chändrä Nädi 🌓 (Shao Yin Heat 🔥),</p>
+            <p className="mb-3">
+              1️⃣ exhausted Maximum Yin/ Chändrä Nädi &amp; Minimum Yäng/Süryä
+              Nädi 🌗 🌓 (Jue Yin).
+            </p>
             <p className="mb-1">
               <strong>6 Functions of Qi...:</strong> to Defend, Control, Propel,
               Warm, Nourish and Transform.
