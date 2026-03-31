@@ -2,6 +2,7 @@ import {
   BookOpen,
   LayoutDashboard,
   Menu,
+  Phone,
   PlusCircle,
   User,
   Users,
@@ -22,6 +23,7 @@ const navItems: { id: Page; label: string; icon: typeof LayoutDashboard }[] = [
   { id: "patients", label: "Patients", icon: Users },
   { id: "newSession", label: "New Session", icon: PlusCircle },
   { id: "referenceLibrary", label: "Reference Library", icon: BookOpen },
+  { id: "contact", label: "Contact & Diagnosis", icon: Phone },
   { id: "profile", label: "Profile", icon: User },
 ];
 
@@ -152,6 +154,7 @@ function SidebarContent({
         {navItems.map((item) => {
           const isActive = currentPage === item.id;
           const Icon = item.icon;
+          const isContact = item.id === "contact";
           return (
             <button
               type="button"
@@ -161,20 +164,45 @@ function SidebarContent({
               className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all ${
                 isActive
                   ? "text-white"
-                  : "text-gray-400 hover:text-gray-200 hover:bg-white/5"
+                  : isContact
+                    ? "text-green-400 hover:text-green-300 hover:bg-white/5"
+                    : "text-gray-400 hover:text-gray-200 hover:bg-white/5"
               }`}
               style={
-                isActive ? { backgroundColor: "#2A1A00", color: "#C8862A" } : {}
+                isActive && isContact
+                  ? { backgroundColor: "#0A2A0A", color: "#4ADE80" }
+                  : isActive
+                    ? { backgroundColor: "#2A1A00", color: "#C8862A" }
+                    : {}
               }
             >
-              <Icon size={18} style={isActive ? { color: "#C8862A" } : {}} />
+              <Icon
+                size={18}
+                style={
+                  isActive && isContact
+                    ? { color: "#4ADE80" }
+                    : isActive
+                      ? { color: "#C8862A" }
+                      : isContact
+                        ? { color: "#4ADE80" }
+                        : {}
+                }
+              />
               {item.label}
+              {isContact && !isActive && (
+                <span
+                  className="ml-auto text-xs px-1.5 py-0.5 rounded-full font-semibold"
+                  style={{ backgroundColor: "#064E3B", color: "#4ADE80" }}
+                >
+                  NEW
+                </span>
+              )}
             </button>
           );
         })}
       </nav>
 
-      {/* Logos below Profile nav item */}
+      {/* Logos below nav */}
       <div className="flex mx-3 mb-3" style={{ gap: 0 }}>
         <img
           src="/assets/uploads/screenshot_20260327_104232-019d2efb-db1f-72a1-bf3d-17fb01c9a149-1.jpg"

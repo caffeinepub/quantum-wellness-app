@@ -1,7 +1,9 @@
 import { Toaster } from "@/components/ui/sonner";
 import { useState } from "react";
+import AmbientMusicPlayer from "./components/AmbientMusicPlayer";
 import Layout from "./components/Layout";
 import PasswordGate from "./components/PasswordGate";
+import Contact from "./pages/Contact";
 import Dashboard from "./pages/Dashboard";
 import NewSession from "./pages/NewSession";
 import Patients from "./pages/Patients";
@@ -13,7 +15,8 @@ export type Page =
   | "patients"
   | "newSession"
   | "referenceLibrary"
-  | "profile";
+  | "profile"
+  | "contact";
 
 export default function App() {
   const [unlocked, setUnlocked] = useState(false);
@@ -35,6 +38,8 @@ export default function App() {
         return <ReferenceLibrary />;
       case "profile":
         return <Profile />;
+      case "contact":
+        return <Contact />;
       default:
         return <Dashboard setPage={setPage} />;
     }
@@ -43,6 +48,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-background">
       <Toaster theme="dark" />
+      <AmbientMusicPlayer />
       <Layout currentPage={page} setPage={setPage}>
         {renderPage()}
       </Layout>
